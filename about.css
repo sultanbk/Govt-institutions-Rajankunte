@@ -1,22 +1,30 @@
 .about {
-    background-color: #28a745; /* success color in Bootstrap */
+    background-color: #00008b; /* success color in Bootstrap */
     height: 70px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center; /* center items horizontally */
     align-items: center; /* center items vertically */
     margin-top: 0px; /* space for nav bar */
-    border-bottom: 5px solid blue; /* add border at the bottom */
+    border-bottom: 5px solid rgb(32, 71, 35); /* add border at the bottom */
 }
 #aboutUsTitle {
     text-align: center; /* center the text */
-    color: #333; /* dark grey color */
+    color: #ffffff; /* dark grey color */
     font-family: 'Times New Roman', serif; /* elegant font */
     font-size: 24px; /* adjust size as needed */
     font-weight: bold; /* make text bold */
     text-transform: uppercase; /* convert text to uppercase */
 }
 
+#aboutSubheadings{
+    font-family: 'futura-pt-condensed' , Arial, sans-serif !important;
+    font-size: 25px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.5; /* added line-height */
+}
 
 .aboutTitle {
     margin-bottom: 15px; /* add some space after the heading */
@@ -42,6 +50,42 @@
 #mVAbout{
     font-family: 'futura-pt-condensed' , Arial, sans-serif !important;
     font-size: 20px;
+}
+
+.image-box {
+    position: relative;
+    width: 100%;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+}
+
+.image-box .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.image-box:hover .overlay {
+    height: 100%;
+}
+
+.image-box .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 .memberInfo {
     color: #333;
@@ -96,6 +140,7 @@
 }
 #boardOfMembers {
     padding: 20px;
+    
 }
 
 .memberB {
