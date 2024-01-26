@@ -16,6 +16,10 @@
     font-weight: bold; /* make text bold */
     text-transform: uppercase; /* convert text to uppercase */
 }
+.no-outline:focus {
+    outline: none;
+    box-shadow: none;
+}
 
 #aboutSubheadings{
     font-family: 'futura-pt-condensed' , Arial, sans-serif !important;
