@@ -58,6 +58,56 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 35%;
 }
 
+.navbar-collapse {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo-navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+/* Hide mobile logo by default */
+.navbar-brand .mobile-logo {
+  display: none;
+}
+
+/* On smaller screens, hide desktop logo and show mobile logo */
+@media (max-width: 767px) {
+  .navbar-brand img[alt="Desktop Logo"] {
+    display: none;
+  }
+  .navbar-brand {
+    width: 100% !important;
+    float: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar-brand img[alt="Mobile Logo"] {
+    display: block;
+    width: auto; 
+    height: auto;
+    float: none; 
+    max-width: 300px;
+    max-height: 300px;
+    margin: 0 auto;
+  }
+  #language-select {
+    width: 120px;
+    margin-left: 18px;
+  }
+}
+
+/* desktop view  */
+@media (min-width: 768px) {
+  #language-select {
+    display: none;
+  }
+}
+
 /* moving circulars */
 .marquee {
   width: 100%;
@@ -150,43 +200,4 @@ h1, h2, h3, h4, h5, h6 {
 
 .carousel-indicators .active {
   opacity: 1;
-}
-
-/* Hide mobile logo by default */
-.navbar-brand img[alt="Mobile Logo"] {
-  display: none;
-}
-
-/* On smaller screens, hide desktop logo and show mobile logo */
-@media (max-width: 767px) {
-  .navbar-brand img[alt="Desktop Logo"] {
-    display: none;
-  }
-  .navbar-brand {
-    width: 100% !important;
-    float: none;
-    display: flex;
-    justify-content: center;
-  }
-
-  .navbar-brand img[alt="Mobile Logo"] {
-    display: block;
-    width: auto; 
-    height: auto;
-    float: none; 
-    max-width: 300px;
-    max-height: 300px;
-    margin: 0 auto;
-  }
-  #language-select {
-    width: 120px;
-    margin-left: 18px;
-  }
-}
-
-/* desktop view  */
-@media (min-width: 768px) {
-  #language-select {
-    display: none;
-  }
 }
