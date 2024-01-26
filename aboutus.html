@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>About Us</title>
+    <link rel="stylesheet" type="text/css" href="about.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- bhai navbar here -->
+    <!-- Navigation Bars -->
+  <!-- Logo Nav -->
+  <nav class="navbar navbar-light bg-light logo-navbar">
+    <a class="navbar-brand" href="#">
+      <img src="images/school_logo2.png" alt="Desktop Logo">
+      <img src="images/school_logo2.png" alt="Mobile Logo">
+    </a>
+  </nav>
+
+  <!-- Main Nav -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light main-navbar" id="main-navbar">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Admission</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Academics</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Departments</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Gallery</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Alumni</a>
+        </li>
+        <select id="language-select" onchange="changeLanguage()">
+          <option value="en">English</option>
+          <option value="kn">Kannada</option>
+        </select>
+      </ul>
+    </div>
+  </nav>
+   
+        <div class="about">
+            <h2 id="aboutUsTitle">About Us</h2>
+        </div>
+   
+    <div class="container aboutUsContainer">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card cardWithButtons">
+                    <!-- content of the different section of about is here -->
+                    <div class="card-body">
+                        <h2 class="aboutTitle">About</h2>
+                        <hr class="blueLine">
+                        <div class="btnGroup">
+                            <button type="button" data-section="visionMission" class="btn btn-outline-primary b1 mr-3 mb-3">Vision Mission</button>
+                            <button type="button" data-section="collageDevelopmentCommittee" class="btn btn-outline-primary b2 mr-3 mb-3">Collage Development Committee</button>
+                            <button type="button" data-section="boardOfMembers" class="btn btn-outline-primary b3 mr-3 mb-3">Board of Members</button>
+                            <button type="button" data-section="chairperson" class="btn btn-outline-primary b4 mr-3 mb-3">About Chairperson</button><br>
+                            <button type="button" data-section="principles" class="btn btn-outline-primary b5 mr-3 mb-3">Principles</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card cardWithContent">
+                    <div class="card-body cardBodyAbout">
+                       <!-- vision mission section start -->
+                        <div id="visionMission" class="content">
+                            <h3 id="subHeadingVM">Vision & Mission</h3>
+                            <hr class="blueLine">
+                            <br>
+                            <p id="mVAbout">
+                                Vision: To provide quality education to students coming from all strata of the society. To shape the life of each student for a better future.
+                            </p>
+                            <p id="mVAbout">
+                                Mission: To create technologically upgraded institution which caters to the educational standards of today’s times.
+                            </p>
+                        </div>
+                        <!-- vision mission section end -->
+                        <!-- team section start -->
+
+                        <!-- Collage Development Committee section start -->
+                        <div id="collageDevelopmentCommittee" class="content">
+                            <h3 id="subHeadingCDC">Collage Development Committee</h3>
+                            <hr class="blueLine">
+                            <br>
+                            <div id="member1" class="member">
+                                <img class="memberImage" src="./images/collage comitee members/member1.jpg" alt="Member 1">
+                                <div class="memberInfo">
+                                    <h4 id="memberOfComittee">President <br>Shri S R Vishwanath</h4><br>
+                                    <p id="memberAbout">About –<br> MLA, Yelahanka | Member, TTD Board | Former Chairman, Bangalore Development Authority (BDA)</p>
+                                </div>
+                            </div>
+                            
+                            <div id="member2" class="member">
+                                <img class="memberImage" src="./images/collage comitee members/member2.jpg" alt="Member 2">
+                                <div class="memberInfo">
+                                    <h4 id="memberOfComittee">Vice-president <br>R M Somashekar Reddy</h4><br>
+                                    <p id="memberAbout">About –<br>Businessman</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div id="member3" class="member">
+                                <img class="memberImage" src="./images/collage comitee members/member3.jpg" alt="Member 3">
+                                <div class="memberInfo">
+                                    <h4 id="memberOfComittee">Treasurer <br>RC Rajendra Kumar</h4><br>
+                                    <p id="memberAbout">About -<br> B.Pharm, Social Worker.</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- Collage Development Committee section end -->
+                        <!-- Board of Members section start -->
+                        <div id="boardOfMembers" class="content">
+                            <h2>Board of Members</h2>
+                            <hr class="blueLine"><br>
+                            <div id="mamber" class="memberB">
+                                <img class="boardMemberImage" src="/images/Board of members/member1.jpg" alt="BMember 1">
+                                <div class="memberInfoB">
+                                    <h4 id="memberOfComittee">Shri. M Manjunath </h4>
+                                    <p id="memberAbout">Edu - BA</p>
+                                </div>
+                                <br>
+                            </div>
+                            <div id="mamber" class="memberB">
+                                <img class="boardMemberImage" src="/images/Board of members/member2.jpg" alt="BMember 2">
+                                <div class="memberInfoB">
+                                    <h4 id="memberOfComittee">Shri. Shivanna N C  </h4>
+                                    <p id="memberAbout">Edu – MA, M.Phil ,<br>Rtd.Principal </p>
+                                </div>
+                            </div>
+                            <br>
+                            <div id="mamber" class="memberB">
+                                <img class="boardMemberImage" src="/images/Board of members/member3.jpg" alt="BMember 3">
+                                <div class="memberInfoB">
+                                    <h4 id="memberOfComittee">Shri. M MohanKumar </h4>
+                                    <p id="memberAbout">Edu -  Dip civil</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div id="mamber" class="memberB">
+                                <img class="boardMemberImage" src="/images/Board of members/member4.jpg" alt="BMember 4">
+                                <div class="memberInfoB">
+                                    <h4 id="memberOfComittee">Shri. M Thimma Reddy </h4>
+                                    <p id="memberAbout">Edu -  BSC, B.Ed</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Board of Members section end -->
+                        <!-- Chairperson section start -->
+                        <div id="chairperson" style="text-align: center;" class="content">
+                            <h2 style="text-align: left; padding-left: 20px;">Chairperson</h2>
+                            <hr class="blueLine"><br>
+                            <img class="chairpersonImage" src="/images/collage comitee members/member1.jpg" alt="Chairperson"><br><br>
+                            <h3 id="memberOfComittee">Shri S R Vishwanath</h3>
+                            <hr class="greyLine1"><br>
+                            <h4 id="chairPersonAbout" style="text-align: center;"><b>MLA, Yelahanka <br> Member, TTD Board <br> Former Chairman, Bangalore Development Authority (BDA)</b></h4><br>
+                            <hr class="greyLine"><br>
+                            <p id="chairPersonAbout">Singanayakanahalli Ramaiah Vishwanath is an Indian Politician who is current MLA from Yelahanka constituency since 25 May 2008. He is former Chairman of Bangalore Development Authority and presently Member of Tirumala Tirupati Devasthanams (TTD) Board. 
+                                He is a social worker and the chairperson of Government school and PU college of Rajanukunte. He is the founder of Vishwa Vani Foundation.
+                                </p>
+                        </div>
+                        
+                        <!-- Chairperson section end -->
+                        <!-- Principles section start -->
+                        <div id="principles" class="content">
+                            <h1 style="text-align: left; padding-left: 20px; ">Principles</h1>
+                            <hr class="blueLine">
+                            <br>
+                            <div class="principlesContainer">
+                                <div class="principle">
+                                    <h3>PU College</h3><br>
+                                    <img class="principleImage" src="/images/principles/PUC.jpg" alt="Principle 1"><br><br>
+                                    <h3>V R Manjula</h3>
+                                    <p>Edu - M.A,M.Phil<br>
+                                        Teaching experience – 17 years<br>
+                                        Joining date – 05/11/2007
+                                        </p>
+                                </div>
+                                <div class="principle">
+                                    <h3>High School</h3><br>
+                                    <img class="principleImage" src="/images/principles/Highschool.jpg" alt="Principle 2"><br><br>
+                                    <h3>Kantaruju B G</h3>
+                                    <p>Edu – MSc, M.Ed, KES<br>
+                                        Teaching experience – 17 years<br>
+                                        Joining date – 15/06/2007
+                                        </p>
+                                </div>
+                                <div class="principle">
+                                    <h3>Primary School</h3><br>
+                                    <img class="principleImage" src="/images/principles/primary.jpg" alt="Principle 3"><br><br>
+                                    <h3>Sreenivasa G</h3>
+                                    <p>Edu – CPEd, Kan& Eng Sr typing, PUC<br>
+                                        Teaching experience – 29 years<br>
+                                        Joining date – 26/07/1994
+                                        </p>
+                                </div><br><br>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="aboutus.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

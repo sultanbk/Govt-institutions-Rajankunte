@@ -1,0 +1,179 @@
+.about {
+    background-color: #28a745; /* success color in Bootstrap */
+    height: 70px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center; /* center items horizontally */
+    align-items: center; /* center items vertically */
+    margin-top: 0px; /* space for nav bar */
+    border-bottom: 5px solid blue; /* add border at the bottom */
+}
+#aboutUsTitle {
+    text-align: center; /* center the text */
+    color: #333; /* dark grey color */
+    font-family: 'Times New Roman', serif; /* elegant font */
+    font-size: 24px; /* adjust size as needed */
+    font-weight: bold; /* make text bold */
+    text-transform: uppercase; /* convert text to uppercase */
+}
+
+
+.aboutTitle {
+    margin-bottom: 15px; /* add some space after the heading */
+    font-size: 20px;
+}
+
+.blueLine {
+    border-top: 1px solid blue; /* blue underline */
+}
+
+.greyLine {
+    border-top: 1px solid grey; /* grey underline */
+    width: 75%; /* adjust as needed */
+    margin: 0 auto; /* center the line */
+}
+.greyLine1 {
+    border-top: 1px solid grey; /* grey underline */
+    width: 55%; /* adjust as needed */
+    margin: 0 auto; /* center the line */
+}
+
+
+#mVAbout{
+    font-family: 'futura-pt-condensed' , Arial, sans-serif !important;
+    font-size: 20px;
+}
+.memberInfo {
+    color: #333;
+    font-size: 16px;
+}
+
+.member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.memberImage {
+    border-radius: 20px; /* rounded corners */
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* added transition */
+}
+
+.memberImage:hover {
+    transform: scale(1.05); /* zoom in */
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1); /* reduced shadow */
+}
+
+.memberInfo {
+    flex-grow: 1;
+}
+#memberOfComittee{
+    font-family: 'futura-pt-condensed' , Arial, sans-serif !important;
+    font-size: 25px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.5; /* added line-height */
+}
+#memberAbout{
+    font-family: 'futura-pt-condensed' , Arial, sans-serif !important;
+    font-size: 20px;
+}
+@media (max-width: 770px) {
+    .member {
+        flex-direction: column;
+    }
+
+    .memberImage {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+#boardOfMembers {
+    padding: 20px;
+}
+
+.memberB {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.boardMemberImage {
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* added transition */
+}
+
+.boardMemberImage:hover {
+    transform: scale(1.05); /* zoom in */
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1); /* reduced shadow */
+}
+
+
+.memberInfoB {
+    flex-grow: 1;
+}
+
+@media (max-width: 770px) {
+    .memberB {
+        flex-direction: column;
+    }
+
+    .boardMemberImage {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+#chairPersonAbout {
+    font-family: 'futura-pt-condensed', Arial, sans-serif !important;
+    font-size: 18px;
+    padding: 0 20px; /* added padding */
+    text-align: justify; /* justified content */
+}
+#principles {
+    text-align: center;
+}
+
+.principlesContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.principleImage {
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 5px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* added transition */
+}
+.principleImage:hover {
+    transform: scale(1.05); /* zoom in */
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1); /* reduced shadow */
+}
+@media (max-width: 1200px) {
+    .principlesContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .principle {
+        margin-bottom: 20px;
+    }
+
+    .principleImage {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
