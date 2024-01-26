@@ -6,7 +6,7 @@
     justify-content: center; /* center items horizontally */
     align-items: center; /* center items vertically */
     margin-top: 0px; /* space for nav bar */
-    border-bottom: 5px solid blue; /* add border at the bottom */
+    border-bottom: 5px solid #2e3192;
 }
 #aboutUsTitle {
     text-align: center; /* center the text */
@@ -24,7 +24,7 @@
 }
 
 .blueLine {
-    border-top: 1px solid blue; /* blue underline */
+    border-top: 1px solid #2e3192;
 }
 
 .greyLine {
@@ -55,7 +55,7 @@
 }
 
 .memberImage {
-    border-radius: 20px; /* rounded corners */
+    border-radius: 10px;
     width: 150px;
     height: 150px;
     margin-right: 20px;
@@ -64,10 +64,10 @@
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* added transition */
 }
 
-.memberImage:hover {
-    transform: scale(1.05); /* zoom in */
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1); /* reduced shadow */
-}
+/* .memberImage:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+} */
 
 .memberInfo {
     flex-grow: 1;
@@ -107,18 +107,18 @@
 }
 
 .boardMemberImage {
-    border-radius: 20px;
+    border-radius: 10px;
     width: 150px;
     height: 150px;
     object-fit: cover;
     margin-right: 20px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* added transition */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.boardMemberImage:hover {
-    transform: scale(1.05); /* zoom in */
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1); /* reduced shadow */
-}
+/* .boardMemberImage:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+} */
 
 
 .memberInfoB {
@@ -151,17 +151,19 @@
 }
 
 .principleImage {
-    border-radius: 20px;
+    border-radius: 10px;
     width: 150px;
     height: 150px;
     object-fit: cover;
     margin-right: 5px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* added transition */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
 }
-.principleImage:hover {
-    transform: scale(1.05); /* zoom in */
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1); /* reduced shadow */
-}
+
+/* .principleImage:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+} */
+
 @media (max-width: 1200px) {
     .principlesContainer {
         flex-direction: column;
@@ -177,3 +179,50 @@
         margin-bottom: 20px;
     }
 }
+.btnGroup .btn {
+    text-align: left;
+}
+
+.cardWithButtons {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+/* .cardWithButtons:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+} */
+
+.aboutTitle {
+    color: #333;
+    text-align: center;
+}
+
+.blueLine {
+    border-top: 1px solid #2e3192;
+}
+
+.btnGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    color: #2e3192;
+    border-color: #2e3192;
+    margin: 10px 0;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #2e3192;
+}
+
+.btn:focus {
+    outline: none;
+  }

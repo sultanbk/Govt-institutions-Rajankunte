@@ -64,13 +64,8 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1000;
 }
 
-.logo-navbar .navbar-brand {
-  display: flex;
-  align-items: center;
-}
-
 /* Hide mobile logo by default */
-.navbar-brand .mobile-logo {
+.navbar-brand img[alt="Mobile Logo"] {
   display: none;
 }
 
