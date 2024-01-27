@@ -352,15 +352,19 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 600px) {
   .carousel-caption {
     font-size: 0.4em;
-    top: 35%;
+    top: 30%;
   }
 
   .carousel-caption p {
-    font-size: 1.2em; 
+    font-size: 1.2em;
+    margin-top: 0.5em; 
   }
 
   .carousel-caption .btn {
     font-size: 0.8em;
     padding: 2px 4px; 
   }
+  .carousel-caption h1 {
+    margin-bottom: 0.2em; 
+}
 }
