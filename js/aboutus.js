@@ -18,12 +18,14 @@ document.addEventListener('DOMContentLoaded', function() {
     buttons.forEach(function(button, index) {
         button.addEventListener('click', function() {
             // Hide all content divs
+            var section = document.getElementById(button.dataset.section);
             contents.forEach(function(content) {
                 content.style.display = 'none';
             });
 
             // Show clicked content
             contents[index].style.display = 'block';
+            section.scrollIntoView({ behavior: 'smooth' });
         });
     });
 });
