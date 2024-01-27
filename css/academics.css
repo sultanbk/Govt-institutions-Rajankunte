@@ -1,0 +1,55 @@
+.academics {
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; /* Adjust this as needed */
+}
+
+#academic_title {
+    color: white; /* Set the text color to white for better contrast against the blue background */
+}
+
+.card-body{
+    border: 2px blue solid;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.card-body_title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-body_line{
+    border: 1px blue solid;
+    width: 100%;
+
+}
+table[data-target] {
+    display: none;
+}
+.th {
+
+    color: blue;
+}
+#th{
+    color: blue;
+}
+
+.lunch{
+    color: blue;
+    text-align: center;
+    
+    font-weight: bold;    
+
+
+}
+
+.table{
+    border: 1px blue solid;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    
+}
