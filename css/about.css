@@ -1,70 +1,81 @@
+/* Styling for the main about section */
 .about {
-    background-color: #2e3192;
+    background-color: #483285 ;
     height: 70px;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: center; /* center items horizontally */
-    align-items: center; /* center items vertically */
-    margin-top: 0px; /* space for nav bar */
-    border-bottom: 5px solid rgb(32, 71, 35); /* add border at the bottom */
-}
-#aboutUsTitle {
-    text-align: center; /* center the text */
-    color: #ffffff; /* dark grey color */
-    font-family: 'Times New Roman', serif; /* elegant font */
-    font-size: 24px; /* adjust size as needed */
-    font-weight: bold; /* make text bold */
-}
-.no-outline:focus {
-    outline: none;
-    box-shadow: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    border-bottom: 5px solid rgb(32, 71, 35);
 }
 
-#aboutSubheadings{
-    font-family: 'futura-pt-condensed' , Arial, sans-serif !important;
-    font-size: 25px;
+/* Styling for the about us title */
+#aboutUsTitle {                 /*This is main for Title Text style in left side of About Us Section*/
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Styling for the about subheadings */
+#aboutSubheadings{              /*This is main for Subheadings Text style in left side of About Us Section*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
     font-weight: bold;
     color: #333;
     margin-bottom: 15px;
-    line-height: 1.5; /* added line-height */
+    line-height: 1.5;
 }
 
+/* Styling for the about information */
+#aboutInformation{
+    font-family: 'Montserrat', sans-serif !important; 
+    font-size: 18px;
+    color: #333;
+    line-height: 1.5;
+    
+}
+
+/* Styling for the about title */
 .aboutTitle {
-    margin-bottom: 15px; /* add some space after the heading */
+    margin-bottom: 15px;
     font-size: 20px;
 }
 
+/* Styling for the blue line */
 .blueLine {
-    border-top: 1px solid #2e3192;
+    border-top: 1px solid #483285 ;
 }
 
+/* Styling for the grey line */
 .greyLine {
-    border-top: 1px solid grey; /* grey underline */
-    width: 75%; /* adjust as needed */
-    margin: 0 auto; /* center the line */
+    border-top: 1px solid grey;
+    width: 75%;
+    margin: 0 auto;
 }
+
+/* Styling for the second grey line */
 .greyLine1 {
-    border-top: 1px solid grey; /* grey underline */
-    width: 55%; /* adjust as needed */
-    margin: 0 auto; /* center the line */
+    border-top: 1px solid grey;
+    width: 55%;
+    margin: 0 auto;
 }
 
-
-#mVAbout{
-    font-family: 'futura-pt-condensed' , Arial, sans-serif !important;
-    font-size: 20px;
-}
-
+/* Styling for the image box */
 .image-box {
     position: relative;
     width: 100%;
 }
 
+/* Styling for the images in the image box */
 .image-box img {
     width: 100%;
     height: auto;
 }
 
+/* Styling for the overlay in the image box */
 .image-box .overlay {
     position: absolute;
     bottom: 0;
@@ -77,30 +88,36 @@
     transition: .5s ease;
 }
 
+/* Show the overlay when the image box is hovered */
 .image-box:hover .overlay {
     height: 100%;
 }
 
+/* Styling for the text in the image box */
 .image-box .text {
-    color: white;
+    font-family: 'Montserrat', sans-serif !important;
     font-size: 20px;
+    color: white;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
+/* Styling for the member info */
 .memberInfo {
     color: #333;
     font-size: 16px;
 }
-
+/* Styling for the member section */
 .member {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
 
+/* Styling for the member image */
 .memberImage {
     border-radius: 10px;
     width: 150px;
@@ -108,44 +125,34 @@
     margin-right: 20px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
     object-fit: cover;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* added transition */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-/* .memberImage:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
-} */
-
+/* Styling for the member info */
 .memberInfo {
     flex-grow: 1;
 }
-#memberOfComittee{
-    font-family: 'futura-pt-condensed' , Arial, sans-serif !important;
-    font-size: 25px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 15px;
-    line-height: 1.5; /* added line-height */
-}
-#memberAbout{
-    font-family: 'futura-pt-condensed' , Arial, sans-serif !important;
-    font-size: 20px;
-}
+
+/* Responsive styling for smaller screens */
 @media (max-width: 770px) {
     .member {
         flex-direction: column;
+        text-align: center;
     }
 
     .memberImage {
         margin-right: 0;
         margin-bottom: 20px;
     }
-}
-#boardOfMembers {
-    padding: 20px;
     
 }
 
+/* Styling for the board of members section */
+#boardOfMembers {
+    padding: 20px;
+}
+
+/* Styling for the member B section */
 .memberB {
     display: flex;
     align-items: center;
@@ -154,6 +161,7 @@
     border-radius: 10px;
 }
 
+/* Styling for the board member image */
 .boardMemberImage {
     border-radius: 10px;
     width: 150px;
@@ -163,16 +171,12 @@
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-/* .boardMemberImage:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
-} */
-
-
+/* Styling for the member info B */
 .memberInfoB {
     flex-grow: 1;
 }
 
+/* Responsive styling for smaller screens */
 @media (max-width: 770px) {
     .memberB {
         flex-direction: column;
@@ -183,35 +187,24 @@
         margin-bottom: 20px;
     }
 }
-#chairPersonAbout {
-    font-family: 'futura-pt-condensed', Arial, sans-serif !important;
-    font-size: 18px;
-    padding: 0 20px; /* added padding */
-    text-align: justify; /* justified content */
-}
-#principles {
-    text-align: center;
-}
 
+/* Styling for the principles container */
 .principlesContainer {
     display: flex;
     justify-content: space-around;
 }
 
+/* Styling for the principle image */
 .principleImage {
     border-radius: 10px;
     width: 150px;
     height: 150px;
     object-fit: cover;
-    margin-right: 5px;
+    margin-left: 20px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
 }
 
-/* .principleImage:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
-} */
-
+/* Responsive styling for smaller screens */
 @media (max-width: 1200px) {
     .principlesContainer {
         flex-direction: column;
@@ -227,10 +220,13 @@
         margin-bottom: 20px;
     }
 }
+
+/* Styling for the button group */
 .btnGroup .btn {
     text-align: left;
 }
 
+/* Styling for the card with buttons */
 .cardWithButtons {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -239,25 +235,25 @@
     background-color: #f1f1f1;
 }
 
-/* .cardWithButtons:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-} */
-
+/* Styling for the about title */
 .aboutTitle {
     color: #333;
     text-align: center;
 }
 
+/* Styling for the blue line */
 .blueLine {
     border-top: 1px solid #2e3192;
 }
 
+/* Styling for the button group */
 .btnGroup {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* Styling for the button */
 .btn {
     color: #2e3192;
     border-color: #2e3192;
@@ -266,11 +262,13 @@
     transition: all 0.3s ease;
 }
 
+/* Styling for the button hover state */
 .btn:hover {
-    color: #fff;
-    background-color: #2e3192;
+    color: #fff !important;
+    background-color: #2e3192 !important;
 }
 
+/* Styling for the button focus state */
 .btn:focus {
     outline: none;
-  }
+}
