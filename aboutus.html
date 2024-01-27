@@ -1,66 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<head id="headContent">
     <title>About Us</title>
-    <link rel="stylesheet" type="text/css" href="about.css">
-
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" type="text/css" href="css/about.css">
 </head>
 <body>
-    <!-- Navigation Bars -->
-  <!-- Logo Nav -->
-<nav class="navbar navbar-light bg-light logo-navbar">
-    <a class="navbar-brand" href="#">
-      <img class="desktop-logo" src="images/govt_logo_eng.png" alt="Desktop Logo">
-      <img class="mobile-logo" src="images/govt_logo_eng.png" alt="Mobile Logo">
-    </a>
-  </nav>
-
-  <!-- Main Nav -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light main-navbar" id="main-navbar">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="aboutus.html">About</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Admission</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Academics</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Departments</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Gallery</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Blog</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Alumni</a>
-        </li>
-        <select id="language-select" onchange="changeLanguage()">
-          <option value="en">English</option>
-          <option value="kn">Kannada</option>
-        </select>
-      </ul>
-    </div>
-  </nav>
+    <div id="navbar"></div>
+    
     <div class="about">
         <h2 id="aboutUsTitle">About Us</h2>
     </div>
@@ -69,10 +15,6 @@
             <div class="col-md-4">
                 <div class="card cardWithButtons">
                     <!-- content of the different section of about is here -->
-                <section class="container">
-                    <div class="card-body">
-                        <!-- <h2 class="aboutTitle">About</h2>
-                        <hr class="blueLine"> -->
                         <div class="btnGroup">
                             <button type="button" data-section="visionMission" class="btn mr-3 mb-3 no-outline">Vision Mission</button>
                             <button type="button" data-section="collageDevelopmentCommittee" class="btn mr-3 mb-3 no-outline">Development Committee</button>
@@ -81,19 +23,15 @@
                             <button type="button" data-section="principles" class="btn mr-3 mb-3 no-outline">Principles</button>
                         </div>
                     </div>
-                </section>
                 </div>
-            </div>
             <div class="col-md-8">
                 <div class="card cardWithContent">
                     <div class="card-body cardBodyAbout">
                        <!-- vision mission section start -->
-                       <section class="container vismis" >
                         <div id="visionMission" class="content">
                             <h3 id="aboutSubheadings">Vision & Mission</h3>
                             <hr class="blueLine">
                             <br>
-                            <section class="container">
                             <img src="/images/Board of members/vision mission logo.png" class="rounded-circle float-left img-fluid" style="width: 150px; margin-top: -10px;" alt="Description of the image">
                             <br><br><br> <br> 
                             <p id="mVAbout">
@@ -102,18 +40,14 @@
                             <p id="mVAbout">
                                 Mission: To create technologically upgraded institution which caters to the educational standards of today’s times.
                             </p>
-                            </section>
                             <br>
-                            <section class="container">
                                 <h3 id="aboutSubheadings" style="text-align: center;">About us</h3>
                                 <hr class="greyLine1"><br>
                                 <p id="mVAbout">
                                     Welcome to Government Institutions Rajanukunte, a hub of academic excellence in Rajanukunte, Bangalore Karnataka. Our institution is dedicated to providing quality education and fostering a culture of learning and growth.
                                     With a passionate team of educators and a diverse student community, we strive to inspire curiosity, ignite imagination, and empower students to reach their full potential.<br><br>At Government Institutions Rajanukunte, we believe in inclusive education and holistic development. Through a blend of rigorous academics and enriching extracurricular activities, we nurture well-rounded individuals prepared to face the challenges of tomorrow.
                                     Join us on our journey of discovery and achievement at Government Institutions Rajanukunte, where every student is valued, every idea is encouraged, and every dream is within reach.
-                                </p>
-                            </section><br>
-                            <section class="container">
+                                </p><br>
                                 <h3 id="aboutSubheadings" style="text-align: center;">Our Institution</h3>
                                 <hr class="greyLine1"><br>
                                 <div class="row">
@@ -159,13 +93,10 @@
                                         <button type="button" class="btn btn-outline-warning" style="padding: 5px 10px; font-size: 15px;">View More</button>
                                     </a>
                                 </div>
-                            </section>
                         </div>
-                    </section>
                         <!-- vision mission section end -->
                         <!-- team section start -->
                         <!-- Collage Development Committee section start -->
-                    <section class="container dev_committee">
                         <div id="collageDevelopmentCommittee" class="content">
                             <h3 id="aboutSubheadings">Collage Development Committee</h3>
                             <hr class="blueLine">
@@ -194,10 +125,8 @@
                             </div>
                             </div>
                         </div>
-                    </section>
                         <!-- Collage Development Committee section end -->
                         <!-- Board of Members section start -->
-                    <section class="container">
                         <div id="boardOfMembers" class="content">
                             <h2 id="aboutSubheadings">Board of Members</h2>
                             <hr class="blueLine"><br>
@@ -232,11 +161,9 @@
                                     <p id="memberAbout">Edu -  BSC, B.Ed</p>
                                 </div>
                             </div>
-                        </div>
-                    </section>    
+                        </div> 
                         <!-- Board of Members section end -->
                         <!-- Chairperson section start -->
-                    <section class="container">
                         <div id="chairperson" style="text-align: center;" class="content">
                             <h2 style="text-align: left; padding-left: 20px;" id="aboutSubheadings">Chairperson</h2>
                             <hr class="blueLine"><br>
@@ -245,15 +172,12 @@
                             <hr class="greyLine1"><br>
                             <h4 id="chairPersonAbout" style="text-align: center;"><b>MLA, Yelahanka <br> Member, TTD Board <br> Former Chairman, Bangalore Development Authority (BDA)</b></h4><br>
                             <hr class="greyLine"><br>
-                            <section class="container">
                             <p id="mVAbout">Singanayakanahalli Ramaiah Vishwanath is an Indian Politician who is current MLA from Yelahanka constituency since 25 May 2008. He is former Chairman of Bangalore Development Authority and presently Member of Tirumala Tirupati Devasthanams (TTD) Board. 
                                 He is a social worker and the chairperson of Government school and PU college of Rajanukunte. He is the founder of Vishwa Vani Foundation.
                                 </p>
-                            </section>
                         </div>
                         <!-- Chairperson section end -->
-                        <!-- Principles section start -->
-                    <section class="container principle">    
+                        <!-- Principles section start -->   
                         <div id="principles" class="content">
                             <h1 style="text-align: left; padding-left: 20px; " id="aboutSubheadings">Principles</h1>
                             <hr class="blueLine">
@@ -288,11 +212,10 @@
                                 </div><br>
                             </div>
                         </div>
-                    </section>
+                    </div>
+                 </div>
                 </div>
             </div>
-        </div>
-    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

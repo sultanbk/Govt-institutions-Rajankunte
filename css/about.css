@@ -1,5 +1,5 @@
 .about {
-    background-color: #00008b; /* success color in Bootstrap */
+    background-color: #2e3192;
     height: 70px;
     display: flex;
     flex-direction: row-reverse;
@@ -14,7 +14,6 @@
     font-family: 'Times New Roman', serif; /* elegant font */
     font-size: 24px; /* adjust size as needed */
     font-weight: bold; /* make text bold */
-    text-transform: uppercase; /* convert text to uppercase */
 }
 .no-outline:focus {
     outline: none;

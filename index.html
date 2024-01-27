@@ -1,67 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head id="headContent">
   <title>MySchool</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css">
-
-  <!-- google font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Navigation Bars -->
-  <!-- Logo Nav -->
-  <nav class="navbar navbar-light bg-light logo-navbar">
-    <a class="navbar-brand" href="#">
-      <img src="images/govt_logo_eng.png" alt="Desktop Logo">
-      <img src="images/govt_logo_eng.png" alt="Mobile Logo">
-    </a>
-  </nav>
-
-  <!-- Main Nav -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light main-navbar" id="main-navbar">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="aboutus.html">About</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Admission</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Academics</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Departments</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Gallery</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Blog</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Alumni</a>
-        </li>
-        <select id="language-select" onchange="changeLanguage()">
-          <option value="en">English</option>
-          <option value="kn">Kannada</option>
-        </select>
-      </ul>
-    </div>
-  </nav>
+<div id="navbar"></div>
 
   <!-- Page Content -->
   <div class="container">
@@ -97,24 +40,16 @@
     </div>
   </div>
   
-  <!-- Latest circulars -->
-  <div class="marquee">
-    <p>
-      Your moving text goes here. <b>|</b>
-      Additional moving text. 
-      <a href="https://example.com">Moving Link</a>
-    </p>
-  </div>
-<section class="container">
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vero sint earum reiciendis ducimus hic praesentium deleniti exercitationem? Tenetur quae ut sequi. Fugiat nisi soluta, quae voluptatem adipisci minima unde. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam quaerat beatae corporis, deleniti at omnis minus pariatur modi esse voluptatem molestias, necessitatibus placeat non laboriosam ipsa quod id labore rem.
-  </p>
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vero sint earum reiciendis ducimus hic praesentium deleniti exercitationem? Tenetur quae ut sequi. Fugiat nisi soluta, quae voluptatem adipisci minima unde. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam quaerat beatae corporis, deleniti at omnis minus pariatur modi esse voluptatem molestias, necessitatibus placeat non laboriosam ipsa quod id labore rem.
-  </p>
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi vero sint earum reiciendis ducimus hic praesentium deleniti exercitationem? Tenetur quae ut sequi. Fugiat nisi soluta, quae voluptatem adipisci minima unde. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam quaerat beatae corporis, deleniti at omnis minus pariatur modi esse voluptatem molestias, necessitatibus placeat non laboriosam ipsa quod id labore rem.
-  </p>
+  <!-- Latest circulars marquee-->
+  <div class="marquee-container">
+    <marquee behavior="scroll" direction="left" class="custom-marquee">
+       <h2> Your marquee content goes here. This text will scroll horizontally. | <a href="Sultab.html">Kabir Singh</a>
+      </h2>
+    </marquee>
+</div>
+</div>
+<section class="container about-us">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sequi beatae cumque ea alias odit, voluptatem odio iste repellat aspernatur magni, quasi distinctio, fuga at id fugit ab eligendi expedita?
 </section>
   <!-- Footer -->
   <footer class="footer mt-auto py-3 bg-light">
@@ -122,10 +57,27 @@
       <span class="text-muted"></span>
     </div>
   </footer>
+  <!-- scripts -->
+  <!-- this script is to load the navbar and header content  -->
+  <script>
+    window.onload = function() {
+      fetch('head.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('headContent').innerHTML += data;
+        });
 
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navbar').innerHTML = data;
+        });
+    };
+  </script>
   <!-- Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <!-- main.jss -->
   <script src="main.js"></script>
 </body>
 </html>

@@ -1,18 +1,25 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
 }
 
 /* Make sure the body takes up the full height */
 body {
   min-height: 100vh;
+  color: #333;
   display: flex;
   flex-direction: column;
-    background-color: #f0f0f0;
-
+  line-height: 1.6;
+  background-color: #edf0f2;
 }
 
+a {
+  color: #0066cc; /* adjust as needed */
+  text-decoration: none;
+}
 /* Make sure content inside the container is responsive */
 .container {
   width: 100%;
@@ -50,12 +57,37 @@ h1, h2, h3, h4, h5, h6 {
 .nav-link {
   padding: .5rem 1rem;
 }
-.logo-navbar {
-  background-color: #f0f0f0 !important; 
-}
 
 .logo-navbar .navbar-brand img {
   max-width: 35%;
+}
+
+.language-select-container {
+  order: 2;
+}
+#language-select2{
+  /* font-weight: 500; */
+}
+
+.navbar-brand {
+  display: flex;
+  justify-content: space-between;
+}
+
+#language-select2 {
+  background-color: #f1f1f1;
+  border: 1.5px solid #171717;
+  color: #483285;
+  margin-top: 12px;
+  border-radius: 6px;
+  /* color: #333; */
+  padding: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#language-select2:focus {
+  outline: none;
 }
 
 .navbar-collapse {
@@ -74,6 +106,7 @@ h1, h2, h3, h4, h5, h6 {
   .navbar-brand img[alt="Desktop Logo"] {
     display: none;
   }
+
   .navbar-brand {
     width: 100% !important;
     float: none;
@@ -103,37 +136,32 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media (max-width: 992px){
+  #language-select2 {
+    display: none;
+  }
+  .sub-menu {
+    display: none;
+  }
+}
+
 /* moving circulars */
-.marquee {
-  width: 100%;
+.marquee-container {
   overflow: hidden;
-  white-space: nowrap;
-  background-color: #2e3192;
-  margin-top: 35px;
-}
-
-.marquee p {
-  display: inline-block;
-  padding-left: 100%;
-  animation: marquee 15s linear infinite;
-  margin-top: 12px;
-  color: #fff;
-  text-align: initial;
-}
-
-.marquee:hover p {
-  animation-play-state: paused;
-}
-
-@keyframes marquee {
-  0% { transform: translate(0, 0); }
-  100% { transform: translate(-100%, 0); }
-}
-
-.marquee a {
-  text-decoration: underline;
+  background-color: #483285; 
   color: white;
-
+  margin-top: 28px;
+  text-align: center;
+}
+.marquee-container {
+  display: flex;
+  align-items: center; /* Centers children vertically */
+  justify-content: center; /* Centers children horizontally */
+  overflow: hidden;
+  background-color: #483285; 
+  color: white;
+  margin-top: 38px;
+  height: 50px; /* Adjust as needed */
 }
 
 .main-navbar {
@@ -141,7 +169,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #main-navbar .nav-link {
-  color: #00008b; 
+  color: #483285; 
   font-weight: 700;
   padding-right: 25px;
   padding-left: 20px;
