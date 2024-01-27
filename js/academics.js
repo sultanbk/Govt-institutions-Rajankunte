@@ -58,3 +58,57 @@ function updateTable() {
         document.getElementById('downloadLink').href = 'files/' + selectedCourse + 'TT.pdf';
     }
 }
+
+window.onload = function() {
+    fetch('head.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('headContent').innerHTML += data;
+      });
+
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+      });
+
+    // Listen for the hashchange event
+    window.addEventListener('hashchange', function() {
+        // Get the new hash
+        var hash = window.location.hash;
+
+        // Remove the '#' from the hash
+        var id = hash.substring(1);
+
+        // Get the button that corresponds to the new hash
+        var button = document.querySelector('button[data-target="' + id + '"]');
+
+        // If the button exists, simulate a click on it
+        if (button) {
+            button.click();
+        }
+    });
+};
+
+document.addEventListener('DOMContentLoaded', function() {
+    window.addEventListener('hashchange', function() {
+        var hash = window.location.hash;
+        var id = hash.substring(1);
+        var button = document.querySelector('button[data-target="' + id + '"]');
+
+        if (button) {
+            button.click();
+        } else {
+            // If the button doesn't exist on the current page, navigate to the 'academics.html' page
+            window.location.href = 'academics.html' + hash;
+        }
+    });
+
+    // If there's a hash in the URL when the page loads, simulate a click on the corresponding button
+    var hash = window.location.hash;
+    var id = hash.substring(1);
+    var button = document.querySelector('button[data-target="' + id + '"]');
+    if (button) {
+        button.click();
+    }
+});

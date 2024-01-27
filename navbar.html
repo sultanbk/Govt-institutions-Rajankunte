@@ -10,24 +10,41 @@
     </div>
   </nav>
 
+
   <!-- Main Nav -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light main-navbar" id="main-navbar">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
           <a class="nav-link" href="index.html">Home</a>
         </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="aboutus.html">About</a>
+        <li class="nav-item dropdown" style="position: relative;">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            About
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="aboutus.html#visionMission" onclick="simulateButtonClick('visionMission')">Vision Mission</a>
+            <a class="dropdown-item" href="aboutus.html#collageDevelopmentCommittee" onclick="simulateButtonClick('collageDevelopmentCommittee')">Development Committee</a>
+            <a class="dropdown-item" href="aboutus.html#boardOfMembers" onclick="simulateButtonClick('boardOfMembers')">Board of Members</a>
+            <a class="dropdown-item" href="aboutus.html#chairperson" onclick="simulateButtonClick('chairperson')">About Chairperson</a>
+            <a class="dropdown-item" href="aboutus.html#principles" onclick="simulateButtonClick('principles')">Principles</a>
+          </div>
         </li>
         <li class="nav-item active">
           <a class="nav-link" href="#">Admission</a>
         </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="academics.html">Academics</a>
+        <li class="nav-item dropdown" style="position: relative;">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Academics
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="academics.html#OVERVIEW">Overview</a>
+            <a class="dropdown-item" href="academics.html#TIMETABLE">Timetable</a>
+            <a class="dropdown-item" href="academics.html#SCHOLARSHIP">Scholarship</a>
+          </div>
         </li>
         <li class="nav-item active">
           <a class="nav-link" href="#">Departments</a>

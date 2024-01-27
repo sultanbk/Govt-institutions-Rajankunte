@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* On smaller screens, hide desktop logo and show mobile logo */
-@media (max-width: 767px) {
+@media (max-width: 982px) {
   .navbar-brand img[alt="Desktop Logo"] {
     display: none;
   }
@@ -150,10 +150,10 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 10px;
   }
   .logo-text {
-    font-size: 25px; /* Change the size */
-    color: #000; /* Change the color */
-    text-align: center; /* Center the text */
-    width: 100%; /* Ensure the text spans the full width of its container */
+    font-size: 25px; 
+    color: #000; 
+    text-align: center; 
+    width: 100%; 
     font-weight: 800;
     color: #2e3192;
   }
@@ -177,6 +177,39 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
   }
 }
+
+/* navbar items  */
+
+/* Style the dropdown menu */
+.nav-item .dropdown-menu {
+  position: absolute;
+  top: 100%; 
+  left: 0; 
+}
+
+/* Style the dropdown items */
+.nav-item .dropdown-menu .dropdown-item {
+  color: #343a40; 
+}
+
+/* Style the dropdown items on hover */
+.nav-item .dropdown-menu .dropdown-item:hover {
+  background-color: #e9ecef;
+  color: #343a40;
+}
+.nav-item.dropdown.show {
+  position: static;
+}
+
+.nav-item.dropdown.show .dropdown-menu {
+  display: block;
+  position: absolute;
+  transform: none;
+  top: 100%;
+  left: 0;
+}
+
+/* navbar items end  */
 
 /* moving circulars */
 .marquee {
@@ -212,7 +245,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main-navbar {
-  background-color: #ffc600 !important; 
+  /* background-color: #ffc600 !important;  */
 }
 
 #main-navbar .nav-link {
@@ -230,7 +263,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: none !important;
 }
 .main-navbar .nav-link:hover {
-  color: white !important; 
+  /* color: white !important;  */
 }
 
 /* carousel slider*/

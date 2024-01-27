@@ -43,3 +43,24 @@ window.onload = function() {
       document.getElementById('navbar').innerHTML = data;
     });
 };
+
+document.addEventListener('DOMContentLoaded', function() {
+  window.addEventListener('hashchange', function() {
+    var hash = window.location.hash;
+    var section = hash.substring(1);
+    simulateButtonClick(section);
+  });
+
+  // If there's a hash in the URL when the page loads, simulate a click on the corresponding button
+  var hash = window.location.hash;
+  var section = hash.substring(1);
+  simulateButtonClick(section);
+});
+
+function simulateButtonClick(section) {
+  var button = document.querySelector('button[data-section="' + section + '"]');
+  console.log('Trying to click button:', button);
+  if (button) {
+    button.click();
+  }
+}
