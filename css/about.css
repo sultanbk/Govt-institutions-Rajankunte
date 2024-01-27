@@ -4,9 +4,9 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: center; /* center items horizontally */
-    align-items: center; /* center items vertically */
-    margin-top: 0px; /* space for nav bar */
-    border-bottom: 5px solid rgb(32, 71, 35); /* add border at the bottom */
+    align-items: center;
+    margin-top: 0px;
+    border-bottom: 5px solid rgb(32, 71, 35);
 }
 #aboutUsTitle {
     text-align: center; /* center the text */
@@ -258,19 +258,15 @@
     align-items: center;
 }
 
-.btn {
-    color: #2e3192;
-    border-color: #2e3192;
+.btnGroup button {
+    /* color: #2e3192; */
+    /* border-color: #2e3192; */
     margin: 10px 0;
     width: 100%;
     transition: all 0.3s ease;
 }
 
-.btn:hover {
+.btnGroup button:hover {
     color: #fff;
     background-color: #2e3192;
 }
-
-.btn:focus {
-    outline: none;
-  }
