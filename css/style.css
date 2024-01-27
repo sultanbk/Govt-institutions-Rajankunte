@@ -59,9 +59,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* global button css  */
 
-
 .logo-navbar .navbar-brand img {
   max-width: 35%;
+  display: block;
+  margin: auto;
 }
 
 .language-select-container {
@@ -136,10 +137,40 @@ h1, h2, h3, h4, h5, h6 {
   #language-select {
     display: none;
   }
+  .logo-navbar .navbar-brand .desktop-logo {
+    height: auto;
+    width: 230px;
+  }
+  .logo-navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 120px; 
+    margin-top: 10px;
+  }
+  .logo-text {
+    font-size: 25px; /* Change the size */
+    color: #000; /* Change the color */
+    text-align: center; /* Center the text */
+    width: 100%; /* Ensure the text spans the full width of its container */
+    font-weight: 800;
+    color: #2e3192;
+  }
+  
+  .logo-navbar .navbar-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 992px){
   #language-select2 {
+    display: none;
+  }
+  .navbar-brand .logo-text {
     display: none;
   }
   .sub-menu {
@@ -204,7 +235,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* carousel slider*/
 .carousel {
-  /* margin: 5px; */
+  margin: 2px;
+}
+
+.carousel-item {
+  transition: 1s;
 }
 
 .carousel-indicators {
@@ -240,6 +275,7 @@ h1, h2, h3, h4, h5, h6 {
 .carousel-indicators .active {
   opacity: 1;
 }
+
 .carousel-item img {
   object-fit: cover;
   width: 100%;
