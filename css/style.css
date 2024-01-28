@@ -19,7 +19,7 @@ body {
 }
 
 a {
-  color: #0066cc;
+  color: #2e3192;
   text-decoration: none;
 }
 /* Make sure content inside the container is responsive */
@@ -509,7 +509,7 @@ footer li {
 #contact-form input[type="submit"] {
   margin: 20px 0;
   padding: 10px;
-  background-color: #007BFF;
+  background-color: #2e3192;
   color: white;
   border: none;
   border-radius: 5px;
