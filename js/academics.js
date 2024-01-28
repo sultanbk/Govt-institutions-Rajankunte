@@ -59,6 +59,27 @@ function updateTable() {
     }
 }
 
+// to select the class from the realted course 
+
+document.getElementById('courseSelect').addEventListener('change', function() {
+    var selectedClassDropdown = document.getElementById('selectedClass');
+    selectedClassDropdown.innerHTML = ''; // clear existing options
+
+    var selectedCourse = this.value;
+
+    if (selectedCourse === 'Highschool') {
+        // add options for high school
+        var classes = ['8', '9', '10'];
+        for (var i = 0; i < classes.length; i++) {
+            var option = document.createElement('option');
+            option.value = classes[i];
+            option.text = classes[i];
+            selectedClassDropdown.add(option);
+        }
+    }
+    // add else if blocks here for other courses
+});
+
 window.onload = function() {
     fetch('head.html')
       .then(response => response.text())
@@ -70,6 +91,26 @@ window.onload = function() {
       .then(response => response.text())
       .then(data => {
         document.getElementById('navbar').innerHTML = data;
+      });
+      fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+      fetch('puc_tt.html')
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('tableContainer').innerHTML = data;
+      });
+      fetch('high_school_tt.html')
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('highSchoolTableContainer').innerHTML = data;
+      });
+      fetch('primary_school_tt.html')
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById('primarySchoolTableContainer').innerHTML = data;
       });
 
     // Listen for the hashchange event

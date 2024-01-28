@@ -81,38 +81,16 @@
 <section class="container about-us">
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sequi beatae cumque ea alias odit, voluptatem odio iste repellat aspernatur magni, quasi distinctio, fuga at id fugit ab eligendi expedita?
 </section>
-  <!-- Footer -->
-  <footer class="footer mt-auto py-3 bg-light">
-    <div class="container">
-      <span class="text-muted"></span>
-    </div>
-  </footer>
+
+<div id="footer"></div>
+
   <!-- scripts -->
   <!-- this script is to load the navbar and header content  -->
-  <script>
-    window.onload = function() {
-      fetch('head.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('headContent').innerHTML += data;
-        });
 
-      fetch('navbar.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('navbar').innerHTML = data;
-        });
-    };
-  </script>
-  <!-- jquery -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- Bootstrap JS -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      $('#carouselExampleIndicators').carousel();
-    });
-  </script>
   <!-- main.jss -->
   <script src="js/main.js"></script>
   <!-- academics js  -->

@@ -5,7 +5,9 @@
   font-size: 16px;
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 /* Make sure the body takes up the full height */
 body {
   min-height: 100vh;
@@ -245,7 +247,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main-navbar {
-  /* background-color: #ffc600 !important;  */
+  background-color: #ffc600 !important; 
 }
 
 #main-navbar .nav-link {
@@ -368,3 +370,77 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0.2em; 
 }
 }
+
+/* footer css starts here  */
+footer.footer-section {
+  background: #010215;
+  padding: 60px 0;
+  color: #bbb;
+  font-size: 13px;
+  padding: 30px 0;
+  background-image: url(../images/footer-bg.png);
+  background-repeat: no-repeat;
+  background-position: center 75px;
+}
+
+footer.footer-section ul li {
+  margin-bottom: 5px;
+}
+.footer-widget .col-md-6 {
+  display: inline-block;
+  width: 48%;
+}
+
+@media (max-width: 768px){
+  footer.footer-section {
+    padding: 30px 0;
+}
+}
+
+footer h3 {
+  color: #ffc600;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+footer p {
+  color: #bbb;
+  line-height: 1.5;
+  font-size: 1em;
+}
+.links-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer a {
+  color: #bbb;
+  text-decoration: none;
+  font-weight: 50;
+}
+footer a:hover {
+  color: #bbb;
+}
+footer ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+footer li {
+  margin-bottom: 15px;
+}
+.links-row ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.links-row a {
+  font-size: 0.8em;
+}
+
+.footer-contact ul{
+  list-style-type: none;
+}
+.footer-contact .fas{
+  margin-right: 6px;
+}
+/* footer css end  */
