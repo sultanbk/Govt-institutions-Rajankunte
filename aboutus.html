@@ -6,21 +6,20 @@
 </head>
 <body>
     <div id="navbar"></div>
-    
-    <div class="about">
+
+<div class="about-container">
         <h2 id="aboutUsTitle">About Us</h2>
-    </div>
     <div class="container aboutUsContainer">
         <div class="row">
             <div class="col-md-4">
                 <div class="card cardWithButtons">
                     <!-- content of the different section of about is here -->
-                    <div class="btnGroup">
-                        <button id="VISIONMISSION" type="button" data-section="visionMission" class="btn mr-3 mb-3 ">Vision Mission</button>
-                        <button id="COMMITTEE" type="button" data-section="collageDevelopmentCommittee" class="btn mr-3 mb-3">Development Committee</button>
-                        <button id="BOARDMEMEBERS" type="button" data-section="boardOfMembers" class="btn mr-3 mb-3 ">Board of Members</button>
-                        <button id="CHAIRPERSON" type="button" data-section="chairperson" class="btn mr-3 mb-3 ">About Chairperson</button>
-                        <button id="PRINCIPLES" type="button" data-section="principles" class="btn mr-3 mb-3 ">Principles</button>
+                    <div class="btnGroup abt-btnGroup">
+                        <button id="VISIONMISSION" type="button" data-section="visionMission" class="btn mr-3 mb-3 ">VISION MISSION</button>
+                        <button id="COMMITTEE" type="button" data-section="collageDevelopmentCommittee" class="btn mr-3 mb-3">DEVELOPMENT COMMITTEE</button>
+                        <button id="BOARDMEMEBERS" type="button" data-section="boardOfMembers" class="btn mr-3 mb-3 ">BOARD OF MEMBERS</button>
+                        <button id="CHAIRPERSON" type="button" data-section="chairperson" class="btn mr-3 mb-3 ">ABOUT CHAIRPERSON</button>
+                        <button id="PRINCIPLES" type="button" data-section="principles" class="btn mr-3 mb-3 ">PRINCIPLES</button>
                     </div>
                 </div>
             </div>
@@ -29,8 +28,8 @@
                     <div class="card-body cardBodyAbout">
                         <!-- vision mission section start -->
                         <div id="visionMission" class="content">
-                            <h3 id="aboutSubheadings">Vision & Mission</h3>
-                            <hr class="blueLine">
+                            <h1 id="aboutSubheadings" class="abt-heading1">VISION AND MISSION</h1>
+                            <!-- <hr class="blueLine"> -->
                             <br>
                             <img src="/images/Board of members/vision mission logo.png" class="rounded-circle float-left img-fluid" style="width: 150px; margin-top: -10px;" alt="Description of the image">
                             <br><br><br> <br> 
@@ -41,15 +40,13 @@
                                 Mission: To create technologically upgraded institution which caters to the educational standards of today’s times.
                             </p>
                             <br>
-                            <h3 id="aboutSubheadings" style="text-align: center;">About us</h3>
-                            <hr class="greyLine1"><br>
+                            <h1 id="aboutSubheadings" class="abt-heading1">About us</h1>
                             <p id="aboutInformation">
                                 Welcome to Government Institutions Rajanukunte, a hub of academic excellence in Rajanukunte, Bangalore Karnataka. Our institution is dedicated to providing quality education and fostering a culture of learning and growth.
                                 With a passionate team of educators and a diverse student community, we strive to inspire curiosity, ignite imagination, and empower students to reach their full potential.<br><br>At Government Institutions Rajanukunte, we believe in inclusive education and holistic development. Through a blend of rigorous academics and enriching extracurricular activities, we nurture well-rounded individuals prepared to face the challenges of tomorrow.
                                 Join us on our journey of discovery and achievement at Government Institutions Rajanukunte, where every student is valued, every idea is encouraged, and every dream is within reach.
                             </p><br>
-                            <h3 id="aboutSubheadings" style="text-align: center;">Our Institution</h3>
-                            <hr class="greyLine1"><br>
+                            <h1 id="aboutSubheadings" class="abt-heading1">Our Institution</h1>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="image-box">
@@ -89,8 +86,8 @@
                             </div> 
                             <br>
                             <div class="d-flex justify-content-center">
-                                <a href="#gallery">
-                                    <button type="button" class="btn btn-outline-warning" style="padding: 5px 10px; font-size: 15px;">View More</button>
+                                <a href="gallery.html" class="abt-viewMore">
+                                    <button type="button" class="btn viewMore_btn btn-outline-warning" style="padding: 5px 10px; font-size: 15px;">View More</button>
                                 </a>
                             </div>
                         </div>
@@ -98,19 +95,20 @@
                         <!-- team section start -->
                         <!-- Collage Development Committee section start -->
                         <div id="collageDevelopmentCommittee" class="content">
-                            <h3 id="aboutSubheadings">Collage Development Committee</h3>
-                            <hr class="blueLine">
+                            <h1 id="aboutSubheadings" class="abt-heading1" >DEVELOPMENT COMMITTEE</h1>
                             <div id="member1" class="member">
                                 <img class="memberImage" src="./images/collage comitee members/member1.jpg" alt="Member 1">
                                 <div class="memberInfo">
-                                    <h4 id="aboutSubheadings">President <br>Shri S R Vishwanath</h4>
+                                    <p>President</p>
+                                    <h4 id="aboutSubheadings">Shri S R Vishwanath</h4>
                                     <p id="aboutInformation">About –<br> MLA, Yelahanka | Member, TTD Board | Former Chairman, Bangalore Development Authority (BDA)</p>
                                 </div>
                             </div>
                             <div id="member2" class="member">
                                 <img class="memberImage" src="./images/collage comitee members/member2.jpg" alt="Member 2">
                                 <div class="memberInfo">
-                                    <h4 id="aboutSubheadings">Vice-president <br>R M Somashekar Reddy</h4>
+                                    <p class="person-post">Vice-president</p>
+                                    <h4 id="aboutSubheadings">R M Somashekar Reddy</h4>
                                     <p id="aboutInformation">About –<br>Businessman</p>
                                 </div>
                             </div>
@@ -118,7 +116,8 @@
                             <div id="member3" class="member">
                                 <img class="memberImage" src="./images/collage comitee members/member3.jpg" alt="Member 3">
                                 <div class="memberInfo">
-                                    <h4 id="aboutSubheadings">Treasurer <br>RC Rajendra Kumar</h4><br>
+                                    <p class="person-post">Treasurer</p>
+                                    <h4 id="aboutSubheadings">RC Rajendra Kumar</h4>
                                     <p id="aboutInformation">About -<br> B.Pharm, Social Worker.</p>
                                 </div>
                             </div>
@@ -126,8 +125,7 @@
                         <!-- Collage Development Committee section end -->
                         <!-- Board of Members section start -->
                         <div id="boardOfMembers" class="content">
-                            <h2 id="aboutSubheadings">Board of Members</h2>
-                            <hr class="blueLine"><br>
+                            <h2 id="aboutSubheadings" class="abt-heading1">Board of Members</h2>
                             <div id="mamber" class="memberB">
                                 <img class="boardMemberImage" src="/images/Board of members/member1.jpg" alt="BMember 1">
                                 <div class="memberInfoB">
@@ -163,13 +161,10 @@
                         <!-- Board of Members section end -->
                         <!-- Chairperson section start -->
                         <div id="chairperson" style="text-align: center;" class="content">
-                            <h2 style="text-align: left; padding-left: 20px;" id="aboutSubheadings">Chairperson</h2>
-                            <hr class="blueLine"><br>
+                            <h1 id="aboutSubheadings" class="abt-heading1">Chairperson</h1>
                             <img class="chairpersonImage" src="/images/collage comitee members/member1.jpg" alt="Chairperson"><br><br>
                             <h3 id="aboutSubheadings">Shri S R Vishwanath</h3>
-                            <hr class="greyLine1"><br>
                             <h4 id="aboutSubheadings" style="text-align: center;"><b>MLA, Yelahanka <br> Member, TTD Board <br> Former Chairman, Bangalore Development Authority (BDA)</b></h4><br>
-                            <hr class="greyLine"><br>
                             <p id="aboutInformation">Singanayakanahalli Ramaiah Vishwanath is an Indian Politician who is current MLA from Yelahanka constituency since 25 May 2008. He is former Chairman of Bangalore Development Authority and presently Member of Tirumala Tirupati Devasthanams (TTD) Board. 
                                 He is a social worker and the chairperson of Government school and PU college of Rajanukunte. He is the founder of Vishwa Vani Foundation.
                             </p>
@@ -177,9 +172,7 @@
                         <!-- Chairperson section end -->
                         <!-- Principles section start -->   
                         <div id="principles" class="content">
-                            <h1 style="text-align: left; padding-left: 20px; " id="aboutSubheadings">Principles</h1>
-                            <hr class="blueLine">
-                            <br>
+                            <h1 id="aboutSubheadings" class="abt-heading1">Principles</h1>
                             <div class="principlesContainer">
                                 <div class="principle">
                                     <h3 id="aboutSubheadings" style="margin-left: 27px;">PU College</h3><br>
@@ -203,11 +196,11 @@
                                     <h3 id="aboutSubheadings" style="margin-left: 10px;">Primary School</h3><br>
                                     <img class="principleImage" src="/images/principles/primary.jpg" alt="Principle 3"><br><br>
                                     <h3 style="text-align: center;">Sreenivasa G</h3>
-                                    <p style="text-align: center;">Edu CPEd,<br> Kan& Eng Sr typing, PUC<br>
+                                    <p style="text-align: center;">Edu CPEd,<br> Kan & Eng Sr typing, PUC<br>
                                         Teaching experience <br>29 years<br>
                                         Joining date 26/07/1994
                                     </p>
-                                </div><br>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -215,6 +208,7 @@
             </div>
         </div>
     </div>
+</div>
 
     <div id="footer"></div>
 

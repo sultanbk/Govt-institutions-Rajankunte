@@ -16,6 +16,7 @@ body {
   flex-direction: column;
   line-height: 1.6;
   background-color: #edf0f2;
+  font-weight: 500;
 }
 
 a {
@@ -29,6 +30,8 @@ a {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 /* Responsive image settings */
@@ -61,6 +64,38 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* global button css  */
 
+.small-topbar {
+  width: 100%;
+}
+
+.small-navbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 15px;
+  background-color: black;
+  color: white;
+}
+.navbar-link i {
+  color: #ffc600;
+  margin-right: 10px;
+}
+
+.navbar-link {
+  color: #fff;
+  margin-left: 15px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-link:hover {
+  color: #ccc;
+}
+
+.navbar-link i {
+  margin-right: 5px;
+}
+
 .logo-navbar .navbar-brand img {
   max-width: 35%;
   display: block;
@@ -69,9 +104,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .language-select-container {
   order: 2;
-}
-#language-select2{
-  /* font-weight: 500; */
 }
 
 .navbar-brand {
@@ -263,9 +295,6 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--warning) !important;
   box-shadow: none !important;
   border-radius: none !important;
-}
-.main-navbar .nav-link:hover {
-  /* color: white !important;  */
 }
 
 /* carousel slider*/
@@ -544,3 +573,92 @@ footer li {
   text-decoration: none;
 }
 /* contact us page css end  */
+
+/* alumni page css starts  */
+#alumni-form {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-weight: 500;
+}
+
+#alumni-form {
+  flex: 1;
+  margin: 5px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+}
+
+#alumni-form textarea {
+  height: 40px;
+}
+
+#alumni-form input[type="text"],
+#alumni-form input[type="email"],
+#alumni-form textarea {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  background-color: transparent;
+  margin-top: 2px;
+  margin-bottom: 20px;
+  padding: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+
+#alumni-form input[type="text"]:focus,
+#alumni-form input[type="email"]:focus,
+#alumni-form textarea:focus {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+#alumni-form input[type="submit"] {
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #2e3192;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#alumni-form input[type="submit"] {
+  display: inline-block;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid #ffc600;
+  padding: 0 35px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 50px;
+  border-radius: 5px;
+  color: #07294d;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 5;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  background-color: #ffc600;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  #alumni-form{
+    flex-direction: column;
+  }
+
+  #alumni-form {
+    order: 2;
+  }
+}
+/* alumni page css ends */

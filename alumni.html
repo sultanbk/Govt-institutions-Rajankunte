@@ -8,6 +8,47 @@
     <!-- navbar here -->
   </div>
 
+  <div class="container">
+    <div id="alumni-form">
+      <form id="myForm" class="row g-3" onsubmit="submitForm(event)">
+        <div class="col-md-6">
+          <input type="text" id="name" name="name" class="form-control" placeholder="Enter Name *" required>
+        </div>
+        <div class="col-md-6">
+          <input type="email" id="email" name="email" class="form-control" placeholder="Enter Email *" required>
+        </div>
+        <div class="col-md-6">
+          <input type="text" id="phone" name="phone" class="form-control" placeholder="Enter Phone Number">
+        </div>
+        <div class="col-md-6">
+          <input type="text" id="batch-yr" name="batch-yr" class="form-control" placeholder="Batch (Year) *" required>
+        </div>
+        <div class="col-md-6">
+          <input type="text" id="company" name="company" class="form-control" placeholder="Company *" required>
+        </div>
+        <div class="col-md-6">
+          <input type="text" id="position" name="position" class="form-control" placeholder="Position *" required>
+        </div>
+        <div class="col-12">
+          <textarea name="address" id="address" class="form-control" placeholder="Address"></textarea>
+        </div>
+        <div class="col-md-6">
+          <input type="text" id="state" name="state" class="form-control" placeholder="State *" required>
+        </div>
+        <div class="col-md-6">
+          <input type="text" id="city" name="city" class="form-control" placeholder="City *" required>
+        </div>
+        <div class="col-12">
+          <textarea name="alumni-msg" id="alumni-msg" class="form-control" placeholder="Any Message?"></textarea>
+        </div>
+        <div class="col-12">
+          <input type="submit" class="btn btn-primary" value="Submit">
+        </div>
+      </form>
+      <div id="submissionMessage" class="mt-3" style="display: none; color: green;">Form submitted successfully!</div>
+    </div>
+  </div>
+
   <!-- this script is to load the navbar and header content  -->
   <script>
     window.onload = function() {

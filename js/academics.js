@@ -80,6 +80,85 @@ document.getElementById('courseSelect').addEventListener('change', function() {
     // add else if blocks here for other courses
 });
 
+//puc select class options 
+document.getElementById('courseSelect').addEventListener('change', function() {
+    var selectedClassDropdown = document.getElementById('selectedClass');
+    selectedClassDropdown.innerHTML = ''; // clear existing options
+
+    if (this.value === 'Highschool' || this.value === 'puc') {
+        // Show the "Select Class" dropdown for Highschool and PUC
+        selectedClassDropdown.style.display = 'block';
+
+        // Add default option
+        var defaultOption = document.createElement('option');
+        defaultOption.text = 'Select Class';
+        selectedClassDropdown.add(defaultOption);
+    }
+});
+
+// primary school select class options
+document.getElementById('courseSelect').addEventListener('change', function() {
+    var selectedClassDropdown = document.getElementById('selectedClass');
+    selectedClassDropdown.innerHTML = ''; // clear existing options
+
+    // Add default option
+    var defaultOption = document.createElement('option');
+    defaultOption.text = 'Select Class';
+    selectedClassDropdown.add(defaultOption);
+
+    var selectedCourse = this.value;
+
+    if (selectedCourse === 'Highschool') {
+        // add options for high school
+        var classes = ['8', '9', '10'];
+        for (var i = 0; i < classes.length; i++) {
+            var option = document.createElement('option');
+            option.value = classes[i];
+            option.text = classes[i];
+            selectedClassDropdown.add(option);
+        }
+    } else if (selectedCourse === 'PrimarySchool') {
+        // add options for primary school
+        var classes = ['1', '2', '3', '4', '5', '6', '7'];
+        for (var i = 0; i < classes.length; i++) {
+            var option = document.createElement('option');
+            option.value = classes[i];
+            option.text = classes[i];
+            selectedClassDropdown.add(option);
+        }
+    }
+    // add else if blocks here for other courses
+});
+
+// for smooth transition 
+var buttons = document.querySelectorAll('.btn_grp .btn');
+var contents = document.querySelectorAll('.content');
+
+buttons.forEach(function(button) {
+    button.addEventListener('click', function() {
+        var target = this.getAttribute('data-target');
+
+        contents.forEach(function(content) {
+            if (content.id === target) {
+                content.style.opacity = 0;
+                setTimeout(function() {
+                    content.style.display = 'block';
+                    setTimeout(function() {
+                        content.style.opacity = 1;
+                    }, 50);
+                }, 200);
+            } else {
+                content.style.opacity = 0;
+                setTimeout(function() {
+                    content.style.display = 'none';
+                }, 200);
+            }
+        });
+    });
+});
+
+
+// to load the navbar and other common html 
 window.onload = function() {
     fetch('head.html')
       .then(response => response.text())
