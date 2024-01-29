@@ -1,34 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head id="headContent">
+  
   <title>Blog</title>
+
+  <style>
+    /* body {
+      padding-top: 56px;
+      background-color: #f8f9fa;
+    } */
+
+    /* @media (min-width: 768px) {
+      body {
+        padding-top: 70px;
+      }
+    } */
+
+    .card {
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 <body>
-  <div id="navbar">
-    <!-- navbar here -->
+  <nav id="navbar">
+
+  </nav>
+
+<!-- Navigation Bar -->
+<!-- Your existing navigation bar code goes here -->
+
+<!-- Page Content -->
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img class="card-img-top" src="https://via.placeholder.com/300" alt="Blog Post 1">
+        <div class="card-body">
+          <h4 class="card-title">Blog Post 1</h4>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog Post 2 -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img class="card-img-top" src="https://via.placeholder.com/300" alt="Blog Post 2">
+        <div class="card-body">
+          <h4 class="card-title">Blog Post 2</h4>
+          <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add more blog post cards as needed -->
+
   </div>
+  <!-- /.row -->
 
-  <!-- this script is to load the navbar and header content  -->
-  <script>
-    window.onload = function() {
-      fetch('head.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('headContent').innerHTML += data;
-        });
+</div>
+<!-- /.container -->
 
-      fetch('navbar.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('navbar').innerHTML = data;
-        });
-    };
-  </script>
-  <!-- Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <!-- main.jss -->
-  <script src="main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<div id="footer"></div>
+
+<script>
+  window.onload = function() {
+    fetch('head.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('headContent').innerHTML += data;
+      });
+
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+      });
+      fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+  });
+};
+</script>
+
+<!-- Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- Custom JS for Smooth Transition -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+      card.addEventListener('mouseenter', function() {
+        this.classList.add('shadow-lg');
+      });
+      card.addEventListener('mouseleave', function() {
+        this.classList.remove('shadow-lg');
+      });
+    });
+  });
+</script>
+
 </body>
 </html>

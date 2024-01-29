@@ -662,3 +662,11 @@ footer li {
   }
 }
 /* alumni page css ends */
+
+/* home page about-us css  */
+/* Add this line to adjust text alignment for the last line */
+.about-us p {
+  text-align-last: left; /* Adjust as needed */
+}
+
+
