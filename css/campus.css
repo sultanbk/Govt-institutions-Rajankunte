@@ -1,0 +1,34 @@
+
+
+ .campus {
+    background-color: #483285;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; /* Adjust this as needed */
+    color: white;
+}
+
+#feature_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 55%;
+    background-color: #483285;
+    color: #ffc600;
+}
+
+.card-img-top {
+    margin-top: 10px;
+    width: 100%; /* This will make the image take the full width of the card */
+    height: 200px; /* Adjust as needed */
+    object-fit: cover; /* This will make the image cover the area without distorting the aspect ratio */
+}
+
+.card bg{
+    background-color: #483285;
+}
+
+
