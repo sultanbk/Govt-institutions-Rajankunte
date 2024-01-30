@@ -2,33 +2,214 @@
 <html lang="en">
 <head id="headContent">
   <title>Blog</title>
+  <style>
+    .card-title {
+      color: #2e3192;
+      font-size: 20px;
+      font-weight: 600;
+    }
+  </style>
 </head>
 <body>
-  <div id="navbar">
-    <!-- navbar here -->
+
+<div id="navbar">
+  <!-- Navbar is here -->
+</div>
+
+<div class="container mt-4">
+  <div class="row">
+    <!-- Blog1 Thumbnail -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img class="card-img-top" src="images/blog1.jpg" alt="Blog Post 2">
+        <div class="card-body">
+          <h4 class="card-title">Breaking Barriers: Celebrating Girls' Achievements in Sports</h4>
+          <p class="card-text">Join us in applauding the remarkable accomplishments of girls in the world of sports. This blog post shines a spotlight on their dedication, skill, and the significant milestones they have achieved, breaking barriers and inspiring future generations.</p>
+          <a href="#" class="btn button" data-toggle="modal" data-target="#blogModal2">Read More</a>
+        </div>
+      </div>
+    </div>
+    <!-- BLog2 Thumbnail -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img class="card-img-top" id="blog1" alt="Blog Post 1">
+        <div class="card-body">
+          <h4 class="card-title">The Government PU College, Rajanakunte, Bangalore</h4>
+          <p class="card-text">The PU college has been a part of the educational landscape since 2020 <br>...</p>
+          <a href="#" class="button btn" data-toggle="modal" data-target="#blogModal1">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog3 Thumbnail -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100">
+        <img class="card-img-top" src="images/blog2.jpg" alt="Blog Post 2">
+        <div class="card-body">
+          <h4 class="card-title">Bridging Gaps: A Recap of Our Insightful Parents' Meeting</h4>
+          <p class="card-text">This blog post aims to encapsulate the key discussions, shared insights, and collaborative initiatives that transpired during this invaluable session.</p>
+          <a href="#" class="btn button" data-toggle="modal" data-target="#blogModal2">Read More</a>
+        </div>
+      </div>
+    </div>
   </div>
+</div>
 
-  <!-- this script is to load the navbar and header content  -->
-  <script>
-    window.onload = function() {
-      fetch('head.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('headContent').innerHTML += data;
-        });
+<div id="footer"></div>
 
-      fetch('navbar.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('navbar').innerHTML = data;
-        });
-    };
-  </script>
-  <!-- Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <!-- main.jss -->
-  <script src="main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<!-- Modals -->
+<!-- Modal1  -->
+<div class="modal fade" id="blogModal1" tabindex="-1" role="dialog" aria-labelledby="blogModal1Label" aria-hidden="true">
+  <!-- Modal content for Blog Post 1 -->
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="blogModal1Label">The Government PU College, Rajanakunte, Bangalore</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Different content for Blog Post 1 -->
+        <img src="images/puc2.jpg" class="img-fluid mb-2" alt="Image 1">
+        <p>The Government PU College, Rajanakunte, Bangalore, Karnataka, has been a part of the educational landscape since 2020. Encompassing 3.15 acres, it is currently undergoing a transformative project supported by Manyata Embassy, with an investment of 4 crores. The college offers diverse courses in Arts, Commerce, and Science.</p>
+        <img src="images/puc_staff.jpg" alt=""><hr>
+        <img src="images/puc_staff.jpg" alt="">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal2  -->
+<div class="modal fade" id="blogModal1" tabindex="-1" role="dialog" aria-labelledby="blogModal1Label" aria-hidden="true">
+  <!-- Modal content for Blog Post 1 -->
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="blogModal1Label">The Government PU College, Rajanakunte, Bangalore</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Different content for Blog Post 1 -->
+        <img src="images/puc2.jpg" class="img-fluid mb-2" alt="Image 1">
+        <p>The Government PU College, Rajanakunte, Bangalore, Karnataka, has been a part of the educational landscape since 2020. Encompassing 3.15 acres, it is currently undergoing a transformative project supported by Manyata Embassy, with an investment of 4 crores. The college offers diverse courses in Arts, Commerce, and Science.</p>
+        <img src="images/puc_staff.jpg" alt=""><hr>
+        <img src="images/puc_staff.jpg" alt="">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal3  -->
+<div class="modal fade" id="blogModal2" tabindex="-1" role="dialog" aria-labelledby="blogModal2Label" aria-hidden="true">
+  <!-- Modal content for Blog Post 2 -->
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="blogModal2Label">Bridging Gaps: A Recap of Our Insightful Parents' Meeting</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Different content for Blog Post 2 -->
+        <img src="images/blog2.jpg" class="img-fluid mb-2" alt="Image 2">
+        <section>
+          <h2>Academic Transparency:</h2>
+          <ul>
+              <li>Parents gained firsthand insights into their child's academic journey, understanding strengths and areas for improvement.</li>
+              <li>Teachers elucidated strategies to ensure academic success, providing a roadmap for collaborative support.</li>
+          </ul>
+      </section>
+  
+      <section>
+          <h2>Curriculum Navigation:</h2>
+          <ul>
+              <li>A detailed overview of the curriculum sparked discussions about aligning educational goals with real-world applications.</li>
+              <li>The synergy between teachers and parents in navigating the educational landscape became a cornerstone of our conversation.</li>
+          </ul>
+      </section>
+  
+      <section>
+          <h2>Feedback Loop Enhancement:</h2>
+          <ul>
+              <li>The meeting emphasized the importance of an effective feedback loop, ensuring a continuous exchange of insights between educators and parents.</li>
+              <li>Strategies were discussed to amplify the impact of constructive feedback on the overall growth of each student.</li>
+          </ul>
+      </section>
+  
+      <section>
+          <h2>Holistic Development Initiatives:</h2>
+          <ul>
+              <li>Beyond academics, extracurricular activities took center stage. Parents discovered the positive influence of these activities on their child's holistic development.</li>
+              <li>Future plans for expanding and diversifying extracurricular offerings were met with enthusiasm and support.</li>
+          </ul>
+      </section>
+  
+      <section>
+          <h2>Communication Channels Reinforcement:</h2>
+          <ul>
+              <li>Establishing and reinforcing effective communication channels was a recurring theme. Parents and teachers explored avenues for seamless interaction, fostering a sense of community.</li>
+              <li>The commitment to maintaining an open line of communication resonated as a shared responsibility.</li>
+          </ul>
+      </section>
+  
+      <section>
+          <h2>Looking Forward:</h2>
+          <p>The blog concludes with a look towards the future—exciting school initiatives, collaborative projects, and the crucial role parents play in these endeavors.</p>
+          <p>A call to action encourages parents to actively participate in school events, ensuring a vibrant and engaged school community.</p>
+      </section>
+  
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Modals -->
+
+
+<script>
+  window.onload = function() {
+    fetch('head.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('headContent').innerHTML += data;
+      });
+
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+      });
+
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+  };
+</script>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- main.js -->
+<script src="js/main.js"></script>
+<!-- academics js -->
+<script src="js/academics.js"></script>
+<!-- common.js -->
+<script src="js/common.js"></script>
+
 </body>
 </html>
