@@ -6,9 +6,12 @@ function setImageSource(elementId, imagePath) {
   }
 }
 
-// Set image for the About Us section
+// Home Page images
 setImageSource('aboutUsImage', 'images/slide2.jpg');
 
 
-// about section images 
+// about section image
 setImageSource('srVishwanath', 'images/collage comitee members/member1.jpg')
+
+// blog images 
+setImageSource('blog1','images/puc_staff.jpg')

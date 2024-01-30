@@ -63,6 +63,42 @@ h1, h2, h3, h4, h5, h6 {
   padding: .5rem 1rem;
 }
 /* global button css  */
+.button {
+  display: inline-block;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid #ffc600;
+  padding: 0 35px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 50px;
+  border-radius: 5px;
+  color: #07294d;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 5;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  background-color: #ffc600;
+  text-decoration: none;
+}
+
+@media (max-width: 768px){
+  .button {
+    padding: 0 25px;
+    font-size: 14px;
+    line-height: 35px;
+    background-color: #ffc600;
+  }
+}
+
 
 .small-topbar {
   width: 100%;
@@ -535,7 +571,7 @@ footer li {
   }
 }
 
-#contact-form input[type="submit"] {
+/* #contact-form input[type="submit"] {
   margin: 20px 0;
   padding: 10px;
   background-color: #2e3192;
@@ -544,7 +580,7 @@ footer li {
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
-}
+} */
 
 #contact-form input[type="submit"] {
   display: inline-block;
@@ -614,7 +650,7 @@ footer li {
   border-radius: 3px;
 }
 
-#alumni-form input[type="submit"] {
+/* #alumni-form input[type="submit"] {
   margin: 20px 0;
   padding: 10px;
   background-color: #2e3192;
@@ -623,7 +659,7 @@ footer li {
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
-}
+} */
 
 #alumni-form input[type="submit"] {
   display: inline-block;
@@ -664,9 +700,9 @@ footer li {
 /* alumni page css ends */
 
 /* home page about-us css  */
-/* Add this line to adjust text alignment for the last line */
+
 .about-us p {
-  text-align-last: left; /* Adjust as needed */
+  text-align-last: left;
 }
 
 
