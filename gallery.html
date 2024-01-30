@@ -154,6 +154,11 @@
     </section>
     <!-- end of content  -->
 
+
+    <div id="footer">
+      <!-- footer is here  -->
+    </div>
+
     <!-- this script is to load the navbar and header content  -->
     <script>
       window.onload = function() {
@@ -168,7 +173,12 @@
           .then(data => {
             document.getElementById('navbar').innerHTML = data;
           });
-      };
+          fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('footer').innerHTML = data;
+    });
+  };
     </script>
 
     <!-- this is fancybox part, it allows users to see images in a larger size when clicking on them -->

@@ -99,6 +99,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* small topbar css  */
 
 .small-topbar {
   width: 100%;
@@ -107,10 +108,27 @@ h1, h2, h3, h4, h5, h6 {
 .small-navbar {
   display: flex;
   justify-content: flex-end;
-  padding: 10px 15px;
+  /* padding: 10px 15px; */
   background-color: black;
   color: white;
 }
+.small-navbar .navbar-link .dropdown-toggle {
+  color: white;
+  text-decoration: none;
+}
+
+.small-navbar .navbar-link .dropdown-menu .dropdown-item {
+  color: #2e3192;
+  text-decoration: none;
+  font-weight: 600;
+}
+@media (max-width: 500px) {
+  .small-navbar .contact-link {
+    display: none;
+  }
+}
+
+/* logo nav bar  */
 .navbar-link i {
   color: #ffc600;
   margin-right: 10px;
@@ -354,6 +372,17 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 15%;
   list-style: none;
 }
+.carousel-control-prev,
+.carousel-control-next {
+  width: 30px; /* make the buttons small */
+  height: 30px; /* make the buttons small */
+  top: calc(50% - 15px); /* center the buttons vertically */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 20px 20px; /* make the icons small */
+}
 
 .carousel-indicators li {
   box-sizing: content-box;
@@ -384,58 +413,75 @@ h1, h2, h3, h4, h5, h6 {
 
 /* first slide text content  */
 
-.carousel-caption {
+.custom-caption {
   position: absolute;
-  top: 50%;
   left: 0;
+  top: 60%;
   transform: translateY(-50%);
-  color: #fff;
-  text-align: left;
-  padding-left: 15px;
-  font-size: 1em; 
+  width: 100%;
+  text-align: left; 
+  margin-left: 10px;
 }
 
-.carousel-caption h1 {
-  font-size: 2.5em;
+.custom-caption h1{
+  font-size: 3.5vw; 
+  color: white;
 }
-
-.carousel-caption p {
-  font-size: 1.5em; 
+.custom-caption p {
+  font-size: 1.7vw; 
+  color: white; 
 }
-.carousel-caption .btn:hover {
-  background-color: #2e3192;
-  color: #ffc600;
-}
-
-.carousel-caption .btn {
-  font-size: 1.5em;
+.custom-caption .cap-button {
+  /* display: inline-block; */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid #ffc600;
+  border-radius: 5px;
+  color: #07294d;
+  cursor: pointer;
+  z-index: 5;
+  font-size: 2.7vh;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
   background-color: #ffc600;
-  color: #2e3192;
-  border-radius: 3.5px;
-  font-weight: 600;
-  transition: background-color 0.3s ease, color 1s ease;
+  padding: 1.5vw;
+  font-weight: 700;
 }
 
-@media (max-width: 600px) {
-  .carousel-caption {
-    font-size: 0.4em;
-    top: 30%;
+@media (max-width: 768px) {
+  .custom-caption h1{
+    font-size: 3.7vw;
+    position: relative;
   }
-
-  .carousel-caption p {
-    font-size: 1.2em;
-    margin-top: 0.5em; 
+  .custom-caption {
+    margin-left: 5px;
   }
-
-  .carousel-caption .btn {
-    font-size: 0.8em;
-    padding: 2px 4px; 
+  .custom-caption p{
+    font-size: 2vw; /* adjust as needed */
   }
-  .carousel-caption h1 {
-    margin-bottom: 0.2em; 
+  .custom-caption .cap-button {
+    position: absolute;
+    top: 19vw; /* move the button up */
+    right: 82.2vw; /* move the button to the right */
+    font-size: 2.5vw;
+    padding: 1vw;
+    /* display: inline-block; */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /* border: 1px solid #ffc600; */
+    border-radius: 2px;
+    color: #07294d;
+    cursor: pointer;
+    z-index: 5;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+    background-color: #ffc600;
+  }
 }
-}
-
 /* footer css starts here  */
 footer.footer-section {
   background: #010215;
