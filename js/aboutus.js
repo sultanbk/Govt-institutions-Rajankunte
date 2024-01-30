@@ -30,6 +30,33 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// JavaScript for smooth transition
+var buttons = document.querySelectorAll('.abt-btnGroup .btn');
+var contents = document.querySelectorAll('.content');
+
+buttons.forEach(function(button) {
+    button.addEventListener('click', function() {
+        var target = this.getAttribute('data-section');
+
+        contents.forEach(function(content) {
+            if (content.id === target) {
+                content.style.opacity = 0;
+                setTimeout(function() {
+                    content.style.display = 'block';
+                    setTimeout(function() {
+                        content.style.opacity = 1;
+                    }, 50);
+                }, 200);
+            } else {
+                content.style.opacity = 0;
+                setTimeout(function() {
+                    content.style.display = 'none';
+                }, 200);
+            }
+        });
+    });
+});
+
 window.onload = function() {
   fetch('head.html')
     .then(response => response.text())
@@ -41,6 +68,11 @@ window.onload = function() {
     .then(response => response.text())
     .then(data => {
       document.getElementById('navbar').innerHTML = data;
+    });
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('footer').innerHTML = data;
     });
 };
 

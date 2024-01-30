@@ -1,34 +1,220 @@
-<!DOCTYPE html>
-<html lang="en">
-<head id="headContent">
-  <title>Gallery</title>
-</head>
-<body>
-  <div id="navbar">
-    <!-- navbar here -->
-  </div>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head id="headContent">
+    <title>gallery</title>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <link rel="stylesheet" href="/css/gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  </head>
+  <body>
+    <div id="navbar">
+      <!-- navbar here -->
+    </div>
+    <!-- gallery starts here -->
 
-  <!-- this script is to load the navbar and header content  -->
-  <script>
-    window.onload = function() {
-      fetch('head.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('headContent').innerHTML += data;
+    <!-- Gallery heading -->
+    <div class=" container gallery_heading" style="background-color:white;">
+    <h1 class="gallery-heading" style="text-align: center; font-weight: 700;">Gallery</h1>
+      <hr class="line">
+      <br>
+      <h3  class="gallery-heading" style="text-align: center; font-size: 22px;">
+        <b style="font-size: 22px;">"Student Life in Frames: </b> Discovering Moments at <br><span style="color: blue; font-size: 22px;">Government Institutions Rajanukunte"</span>
+      </h3>
+    </div>
+
+    <!-- Main container -->
+    <section class="container"  id="main-container" style="background-color: rgb(255, 255, 255); margin-bottom:0px;">
+      <br>
+      <h3 style="text-align: center;"><b>SCHOOL & PUC</b></h3>
+      <hr class="line">
+      <br>
+      <div class="row">
+        <!-- First option box -->
+        <div class="col-md-4 offset-md-1 box image-container pb-md-0 pb-4">
+          <img src="/images/gallery/school_1.jpg" alt="Image 1" class="imgG-fluid">
+          <button class="image-link btn btn-warning">SCHOOL</button>
+        </div>
+        <!-- Second option box -->
+        <div class="col-md-4 offset-md-2 box image-container">
+          <img src="/images/gallery/PUC_1.jpg" alt="Image 2" class="imgG-fluid">
+          <button class="image-link btn btn-primary">PU Collage</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- this is school section  -->
+    <section class="container" id="school-section" style="display: none; margin-bottom: 20px;  background-color: white;">
+      <h2 style="text-align: center; font-size: 50px; font-weight: 700;"><b>SCHOOL</b></h2>
+      <hr class="line">
+      <a href="#main-container" class="fa fa-arrow-left" style="font-size: 30px; color: grey; text-decoration: none;"></a>
+      <div class="row">
+        <figure class="col-md-4 col-sm-6 p-1">
+          <a href="/images/Board of members/MV1.jpg" data-fancybox="gallery">
+            <img class="img-fluid" src="/images/Board of members/MV1.jpg">
+          </a>
+        </figure>
+        <figure class="col-md-4 col-sm-6 p-1">
+          <a href="/images/Board of members/MV2.jpg" data-fancybox="gallery">
+            <img class="img-fluid" src="/images/Board of members/MV2.jpg">
+          </a>
+        </figure>
+        <figure class="col-md-4 col-sm-6 p-1">
+          <a href="/images/Board of members/MV2.jpg" data-fancybox="gallery">
+            <img class="img-fluid" src="/images/Board of members/MV2.jpg">
+          </a>
+        </figure>
+        <figure class="col-md-4 col-sm-6 p-1">
+          <a href="/images/Board of members/MV2.jpg" data-fancybox="gallery">
+            <img class="img-fluid" src="/images/Board of members/MV2.jpg">
+          </a>
+        </figure>
+        <figure class="col-md-4 col-sm-6 p-1">
+          <a href="/images/Board of members/MV2.jpg" data-fancybox="gallery">
+            <img class="img-fluid" src="/images/Board of members/MV2.jpg">
+          </a>
+        </figure>
+        <figure class="col-md-4 col-sm-6 p-1">
+          <a href="/images/Board of members/MV2.jpg" data-fancybox="gallery">
+            <img class="img-fluid" src="/images/Board of members/MV2.jpg">
+          </a>
+        </figure>
+        <figure class="col-xl-5 offset-md-2 col-lg-5 col-md-4 col-sm-6 p-1" style="align-items: center;">
+          <a href="/videos/Board of members/MV3.mp4" data-fancybox="gallery">
+            <video class="img-fluid" controls>
+              <source src="/videos/Board of members/MV3.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </a>
+        </figure>
+        <figure class="col-xl-5 col-lg-5 col-md-4 col-sm-6 p-1" style="align-items: center;">
+          <a href="/videos/Board of members/MV3.mp4" data-fancybox="gallery">
+            <video class="img-fluid" controls>
+              <source src="/videos/Board of members/MV3.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </a>
+        </figure>
+      </div>
+    </section> 
+
+    <!-- this is the puc section -->
+    <section class="container" id="pu-section" style="display: none;margin-bottom: 20px;  background-color: white;">
+      <h2 style="text-align: center; font-size: 50px; font-weight: 700;"><b>PU COLLAGE</b></h2>
+      <hr class="line">
+      <a href="#main-container" class="fa fa-arrow-left"></a>
+      <div class="row">
+        <figure class="col-md-4 col-sm-6 p-1">
+          <a href="/images/Board of members/MV1.jpg" data-fancybox="gallery">
+            <img class="img-fluid" src="/images/Board of members/MV1.jpg">
+          </a>
+        </figure>
+        <figure class="col-md-4 col-sm-6 p-1">
+          <a href="/images/Board of members/MV2.jpg" data-fancybox="gallery">
+            <img class="img-fluid" src="/images/Board of members/MV2.jpg">
+          </a>
+        </figure>
+        <figure class="col-md-4 col-sm-6 p-1">
+          <a href="/images/Board of members/MV2.jpg" data-fancybox="gallery">
+            <img class="img-fluid" src="/images/Board of members/MV2.jpg">
+          </a>
+        </figure>
+        <figure class="col-md-4 col-sm-6 p-1">
+          <a href="/images/Board of members/MV2.jpg" data-fancybox="gallery">
+            <img class="img-fluid" src="/images/Board of members/MV2.jpg">
+          </a>
+        </figure>
+        <figure class="col-md-4 col-sm-6 p-1">
+          <a href="/images/Board of members/MV2.jpg" data-fancybox="gallery">
+            <img class="img-fluid" src="/images/Board of members/MV2.jpg">
+          </a>
+        </figure>
+        <figure class="col-md-4 col-sm-6 p-1">
+          <a href="/images/Board of members/MV2.jpg" data-fancybox="gallery">
+            <img class="img-fluid" src="/images/Board of members/MV2.jpg">
+          </a>
+        </figure>
+        <figure class="col-xl-5 offset-md-2 col-lg-5 col-md-4 col-sm-6 p-1" style="align-items: center;">
+          <a href="/videos/Board of members/MV3.mp4" data-fancybox="gallery">
+            <video class="img-fluid" controls>
+              <source src="/videos/Board of members/MV3.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </a>
+        </figure>
+        <figure class="col-xl-5 col-lg-5 col-md-4 col-sm-6 p-1" style="align-items: center;">
+          <a href="/videos/Board of members/MV3.mp4" data-fancybox="gallery">
+            <video class="img-fluid" controls>
+              <source src="/videos/Board of members/MV3.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </a>
+        </figure>
+      </div>
+    </section>
+    <!-- end of content  -->
+
+    <!-- this script is to load the navbar and header content  -->
+    <script>
+      window.onload = function() {
+        fetch('head.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('headContent').innerHTML += data;
+          });
+
+        fetch('navbar.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+          });
+      };
+    </script>
+
+    <!-- this is fancybox part, it allows users to see images in a larger size when clicking on them -->
+    <script>
+      $(document).ready(function() {
+        $("[data-fancybox='gallery']").fancybox({
+          buttons : [ 
+            'zoom',
+            'close'
+          ]
+        });
+      });
+      </script>
+
+      <!-- this script is to change the page when clicking on the buttons -->
+      <script>
+        document.querySelector('.btn-warning').addEventListener('click', function() {
+          document.querySelector('#main-container').style.display = 'none';
+          document.querySelector('#school-section').style.display = 'block';
+          document.querySelector('#pu-section').style.display = 'none';
         });
 
-      fetch('navbar.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('navbar').innerHTML = data;
+        document.querySelector('.btn-primary').addEventListener('click', function() {
+          document.querySelector('#main-container').style.display = 'none';
+          document.querySelector('#school-section').style.display = 'none';
+          document.querySelector('#pu-section').style.display = 'block';
         });
-    };
-  </script>
-  <!-- Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-  <!-- main.jss -->
-  <script src="main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-</body>
-</html>
+
+        document.querySelectorAll('.fa-arrow-left').forEach(function(element) {
+          element.addEventListener('click', function() {
+            document.querySelector('#main-container').style.display = 'block';
+            document.querySelector('#school-section').style.display = 'none';
+            document.querySelector('#pu-section').style.display = 'none';
+          });
+        });
+      </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- main.jss -->
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <!--  Google Fonts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <!--  jQuery first, then Popper.js, and then Bootstrap JS -->
+  
+  </body>
+  </html>

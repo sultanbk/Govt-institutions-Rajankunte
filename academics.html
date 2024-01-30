@@ -9,25 +9,22 @@
     <div id="navbar">
         <!-- navbar is here -->
     </div>
-    <div class="academics">
-        <h2 id="academic_title">ACADEMICS</h2>
-    </div>
-    <br>
-    <div class="container" style="margin-bottom: 20px;">
+
+<div class="academics-container">
+    <h2 id="academicsTitle">Academics</h2>
+    <div class=" container aboutUsContainer">
         <div class="row">
-            <div class="col-md-3" style="margin-bottom: 20px;">
-                <div class="card-body">
-                    <h2 class="card-body_title">ACADEMICS</h2>
-                    <hr class="card-body_line">
+            <div class="col-md-4" style="margin-bottom: 10px;">
+                <div class="card card_academics">
                     <div class="btn_grp">
-                        <button type="button" class="btn btn-outline-primary btn-lg btn-block" data-target="OVERVIEW">OVERVIEW</button>
-                        <button type="button" class="btn btn-outline-primary btn-lg btn-block" data-target="TIMETABLE">TIMETABLE</button>
-                        <button type="button" class="btn btn-outline-primary btn-lg btn-block" data-target="SCHOLARSHIP">SCHOLARSHIP</button>
+                        <button type="button" class="btn mr-3 mb-3" data-target="OVERVIEW">OVERVIEW</button>
+                        <button type="button" class="btn mr-3 mb-3" data-target="TIMETABLE">TIMETABLE</button>
+                        <button type="button" class="btn mr-3 mb-3" data-target="SCHOLARSHIP">SCHOLARSHIP</button>
                     </div>
                 </div>
             </div>
-            <div class="col-md-9">
-                <div class="card-body">
+            <div class="col-md-8">
+                <div class="card academics-card">
                     <div id="OVERVIEW" class="content">
                         <h2 class="card-body_title">OVERVIEW</h2>
                         <hr class="card-body_line">
@@ -36,26 +33,33 @@
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, suscipit ab? Sed deleniti dolorum neque, consectetur maxime magnam reprehenderit saepe, molestiae expedita corporis culpa odit, voluptatum facilis quis. Veritatis, eveniet!Lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                     </div>
                     <div id="TIMETABLE" class="content" style="display: none;">
-                        <h2 class="card-body_title">TIMETABLE</h2>
+                        <h1 class="card-body_title">TIMETABLE</h1>
                         <div class="tt_options">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label for="selectedClass">Select Course</label>
+                                    <!-- <label for="selectedClass">Select Course</label> -->
                                     <select class="form-control" id="courseSelect">
-                                        <option value="">Select a course</option>
+                                        <option value="">COURSE</option>
+                                        <option value="PrimarySchool">PRIMARY SCHOOL</option>
+                                        <option value="Highschool">HIGH SCHOOL</option>
                                         <option value="puc">PUC</option>
-                                        <option value="Highschool">Highschool</option>
-                                        <option value="PrimarySchool">PrimarySchool</option>
                                     </select>
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="selectedClass">Select Class</label>
+                                    <select class="form-control" id="selectedStream" style="display: none;">
+                                        <option value="">STREAM</option>
+                                        <option value="SCIENCE">SCIENCE</option>
+                                        <option value="COMMERCE">COMMERCE</option>
+                                        <option value="ARTS">ARTS</option>
+                                    </select>
+                                </div>
+                                <!-- <div class="col-md-6">
                                     <select class="form-control" id="selectedClass">
                                         <option value="">Select Class</option>
                                     </select>
-                                </div>
+                                </div> -->
                                 <div class="col-md-6">
-                                    <label for="selectedDay">select day</label>
+                                    <!-- <label for="selectedDay">select day</label> -->
                                     <select class="form-control" id="selectDay">
                                         <option value="">Select a day</option>
                                         <option value="Monday">Monday</option>
@@ -98,9 +102,11 @@
             </div>
         </div>
     </div>
-    <div id="footer">
+</div>
+
+<div id="footer">
         <!-- footer is here  -->
-    </div>
+</div>
 
     <!-- script libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
