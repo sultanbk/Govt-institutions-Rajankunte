@@ -153,21 +153,28 @@
       </section>
         <!-- end of content  -->
 
+        <div id="footer"></div>
+
         <!-- this script is to load the navbar and header content  -->
         <script>
-          window.onload = function() {
-            fetch('head.html')
-              .then(response => response.text())
-              .then(data => {
-                document.getElementById('headContent').innerHTML += data;
-              });
+    window.onload = function() {
+      fetch('head.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('headContent').innerHTML += data;
+        });
 
-            fetch('navbar.html')
-              .then(response => response.text())
-              .then(data => {
-                document.getElementById('navbar').innerHTML = data;
-              });
-          };
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navbar').innerHTML = data;
+        });
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('footer').innerHTML = data;
+    });
+    };
         </script>
 
         <!-- this is fancybox part, it allows users to see images in a larger size when clicking on them -->
