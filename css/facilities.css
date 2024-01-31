@@ -75,7 +75,7 @@
 
 
 .card-text{
-    color:#2e3192   ;
+    color: black;  ;
 }
 
 
@@ -120,7 +120,7 @@
 
 
 #card-header{
-    color: #2e3192;
+    color: black;
     font-weight: 600;
     font-size: 20px;
 }
