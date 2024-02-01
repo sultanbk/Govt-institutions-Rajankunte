@@ -156,26 +156,7 @@
         <div id="footer"></div>
 
         <!-- this script is to load the navbar and header content  -->
-        <script>
-    window.onload = function() {
-      fetch('head.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('headContent').innerHTML += data;
-        });
-      }
-
-        // <!-- this is fancybox part, it allows users to see images in a larger size when clicking on them -->
-       
-          $(document).ready(function() {
-            $("[data-fancybox='gallery']").fancybox({
-              buttons : [ 
-                'zoom',
-                'close'
-              ]
-            });
-          });
-        </script>
+        
           <!-- this script is to change the page when clicking on the buttons -->
           <script>
             document.querySelector('#back-button').addEventListener('click', function(event) {
@@ -207,7 +188,7 @@
           <!-- to stop vedio when go back -->
           
             <script>
-              document.addEventListener('DOMContentLoaded', function() {
+              
                 document.querySelectorAll('.fa-arrow-left').forEach(function(element) {
                   element.addEventListener('click', function() {
                     var videos = document.querySelectorAll('#vid_1, #vid_2, #vid_puc');
@@ -216,9 +197,40 @@
                     }
                   });
                 });
-              });
+              
             </script>
           </script>
+          <script>
+            
+    window.onload = function() {
+      fetch('head.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('headContent').innerHTML += data;
+        });
+
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navbar').innerHTML = data;
+        });
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('footer').innerHTML = data;
+    });
+    };
+                // <!-- this is fancybox part, it allows users to see images in a larger size when clicking on them -->
+               
+                  $(document).ready(function() {
+                    $("[data-fancybox='gallery']").fancybox({
+                      buttons : [ 
+                        'zoom',
+                        'close'
+                      ]
+                    });
+                  });
+                </script>
 
         <!-- Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
