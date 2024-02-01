@@ -164,18 +164,6 @@
           document.getElementById('headContent').innerHTML += data;
         });
 
-      fetch('navbar.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('navbar').innerHTML = data;
-        });
-      fetch('footer.html')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('footer').innerHTML = data;
-    });
-    };
-        </script>
 
         <!-- this is fancybox part, it allows users to see images in a larger size when clicking on them -->
         <script>
@@ -187,7 +175,6 @@
               ]
             });
           });
-          </script>
 
           <!-- this script is to change the page when clicking on the buttons -->
           <script>
