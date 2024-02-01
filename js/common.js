@@ -29,6 +29,11 @@ setImageSource('srVishwanath', 'images/collage comitee members/member1.jpg')
 
 setImageSource('blog1','images/puc_staff.jpg')
 
+
+
+
+
+
 // facilities images
 
 setImageSource('classroom','images/facilities/classroom.jpg')
@@ -44,6 +49,7 @@ setImageSource('ground','images/facilities/ground.jpg')
 setImageSource('badminton_court','images/facilities/badminton_court.jpg')
 setImageSource('food','images/facilities/food.jpg')
 setImageSource('auditorium','images/facilities/auditorium.jpg')
+setImageSource('park','images/facilities/park.jpg')
 
 
 
