@@ -59,9 +59,9 @@
   <div class="row">
     <div class="col-md-6">
       <h2 class="mb-4">Welcome to Government Kannada and English Medium School and Pre University College Rajankunte, Bengaluru</h2>
-      <p>
-        Our goal is to make learning enjoyable and empowering. With caring teachers and a variety of subjects, we want to help students gain knowledge, skills, and good values. Our school is all about getting ready for a successful future!
-      </p>
+      <p>Our goal is to make learning enjoyable and empowering. With caring teachers and a variety of subjects, we want to help students gain knowledge, skills, and good values. Our school is all about getting ready for a successful future!
+
+        At our school, we foster a holistic learning environment, promoting creativity and critical thinking. Extracurricular activities, sports, and community engagement enrich students' experiences, instilling a sense of responsibility and teamwork. Our commitment extends beyond academics to character development, nurturing well-rounded individuals poised for success in a dynamic world. We prioritize creating a supportive community where every student can thrive and develop into confident, compassionate, and capable individuals.</p>
       <a href="aboutus.html" class="btn">Learn More</a>
     </div>
     <div class="col-md-6">
@@ -69,12 +69,31 @@
       <div class="row">
         <!-- Photos and descriptions for Primary School -->
         <!-- Add your photo URLs and descriptions here -->
-        <div class="col-md-4 photo-card">
-          <img src="images/IMG-20240125-WA0129.jpg" alt="Photo 1">
-          <div class="photo-description">Description 1</div>
+        <div class="col-md-6 img-fluid photo-card"  id="photo-card1">
+          <a href="images/IMG-20240125-WA0129.jpg" data-fancybox="gallery" >
+            <img src="images/IMG-20240125-WA0129.jpg" alt="Photo 1">
+          </a>
+          
         </div>
-        <div class="col-md-4 photo-card">
-          <img src="images/IMG-20240125-WA0156.jpg" alt="Photo 2">
+        <div class="col-md-6 img-fluid photo-card" id="photo-card2">
+          <a href="images/IMG-20240125-WA0156.jpg" data-fancybox="gallery" >
+            <img src="images/IMG-20240125-WA0156.jpg" alt="Photo 2">
+          </a>
+        
+        </div>
+        <div class="col-md-6 img-fluid photo-card" id="photo-card3">
+          <a href="images/IMG-20240125-WA0164.jpg" data-fancybox="gallery" >
+            <img src="images/IMG-20240125-WA0164.jpg" alt="Photo 3">
+          </a>
+        
+        </div>
+        <div class="col-md-6 img-fluid photo-card" id="photo-card4">
+          <a href="images/IMG-20240125-WA0119.jpg" data-fancybox="gallery" >
+            <img src="images/IMG-20240125-WA0119.jpg" alt="Photo 4">
+          </a>
+        
+        </div>
+        
           <!-- <div class="photo-description">Description 2</div> -->
         </div>
         <!-- Add more photo cards as needed -->
@@ -102,5 +121,23 @@
   <script src="js/academics.js"></script>
   <!-- common.js  -->
   <script src="js/common.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script>
+  $('[data-fancybox="gallery"]').fancybox({
+      buttons : [ 
+          'close'
+      ],
+      loop: false,
+      infobar: false,
+      smallBtn: true,
+      toolbar: false,
+      touch: {
+          vertical: false,  // Allow to drag content vertically
+          momentum: false   // Continue movement after releasing mouse/touch when panning
+      }
+  });
+  </script>
 </body>
 </html>

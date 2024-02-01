@@ -781,4 +781,27 @@ footer li {
   text-align-last: left;
 }
 
+.photo-card .img-fluid {
+  aspect-ratio: 581/300; 
+  object-fit: cover;
+}
 
+.photo-card img {
+  width: 100%; /* This will make the image take the full width of its parent element */
+  height: 200px; /* Adjust this value to suit your needs */
+  object-fit: cover;
+  padding: 5px;
+   /* This will crop the image to fit the dimensions without distorting it */
+}
+
+.photo-description{
+  text-align: center;
+}
+
+.photo-card img {
+  transition: transform 0.3s ease-in-out; /* This will animate the transform property */
+}
+
+.photo-card img:hover {
+  transform: scale(1.1); /* This will scale the image up to 110% */
+}
