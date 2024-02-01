@@ -19,22 +19,6 @@ document.querySelectorAll('.btn_grp .btn').forEach(function(button) {
 
 
 
-/*
-document.querySelector('.btn[data-target="TIMETABLE"]').addEventListener('click', function() {
-    // Hide all tables
-    var tables = document.querySelectorAll('.table-responsive');
-    for (var i = 1; i < tables.length; i++) {
-        tables[i].style.display = 'none';
-    }
-
-    var selectedDay = this.options[this.selectedIndex].getAttribute('data-target');
-    document.getElementById(selectedDay).style.display = 'block';
-});*/
-
-
-
-
-
 document.getElementById('selectDay').addEventListener('change', updateTable);
 document.getElementById('courseSelect').addEventListener('change', updateTable);
 
@@ -232,3 +216,12 @@ document.addEventListener('DOMContentLoaded', function() {
         button.click();
     }
 });
+
+function toggleDescription(descriptionId) {
+    var description = document.getElementById(descriptionId);
+    if (description.style.display === "none") {
+        description.style.display = "block";
+    } else {
+        description.style.display = "none";
+    }
+}
