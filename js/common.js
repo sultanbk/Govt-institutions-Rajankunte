@@ -6,7 +6,7 @@ function setImageSource(elementId, imagePath) {
   }
 }
 
-// Home Page Slide Show 
+// Home Page Slide Show Use 1920x800px (12:5 ratio) Images Here for Better Results
 setImageSource('first-slide', 'images/slide show/slide1.jpg')
 setImageSource('second-slide', 'images/slide show/slide2.jpg')
 setImageSource('third-slide', 'images/slide show/slide3.jpg')

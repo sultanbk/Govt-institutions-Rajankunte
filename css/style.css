@@ -17,11 +17,15 @@ body {
   line-height: 1.6;
   background-color: #edf0f2;
   font-weight: 500;
+  text-align: justify;
 }
 
 a {
   color: #2e3192;
   text-decoration: none;
+}
+p{
+
 }
 /* Make sure content inside the container is responsive */
 .container {
@@ -41,7 +45,28 @@ img {
 }
 
 /* Responsive typography */
-h1, h2, h3, h4, h5, h6 {
+h1 {
+  color: #2e3192;
+  font-weight: 600;
+  font-size: 26px;
+  margin-bottom: 10px; /* Adjust this value for the desired bottom margin */
+}
+
+/* h1::after {
+  content: '';
+  display: block;
+  width: 50%;
+  border-bottom: 2px solid #ffc600;
+  margin-top: 5px; 
+} */
+h2 {
+  color: #2e3192;
+  font-weight: 600;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+h2, h3, h4, h5, h6 {
   font-size: 100%;
 }
 
@@ -122,9 +147,14 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   font-weight: 600;
 }
+.small-navbar .contact-link,
+.small-navbar .circulars-link{
+  text-decoration: none;
+}
 @media (max-width: 500px) {
   .small-navbar .contact-link {
     display: none;
+    text-decoration: none;
   }
 }
 

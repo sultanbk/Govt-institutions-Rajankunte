@@ -1,8 +1,7 @@
-#academicsTitle {
+#page_title {
     background-color: #2e3192 ;
     max-width: 100%;
     height: 55px;
-    /* height: 50px; */
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
@@ -12,8 +11,6 @@
     color: #ffffff;
     font-size: 20px;
     font-weight: 600;
-    /* font-weight: bold; */
-    /* border-bottom: 5px solid rgb(32, 71, 35); */
 }
 
 .card-body_title {
@@ -31,38 +28,14 @@
     margin-top: 5px; /* Adjust this value for the space between text and border */
 }
 
-.academics-card {
+.right1_card {
     padding: 12px;
     margin-bottom: 10px;
 }
 
-table[data-target] {
-    display: none;
-}
-.th {
-
-    color: #2e3192;
-}
-#th{
-    color: #2e3192;
-}
-
-.lunch{
-    color: #12451c;
-    text-align: center;
-
-    font-weight: bold;    
-}
-
-.table{
-    border: 1px #2e3192 solid;
-    border-radius: 5px;
-    background-color: rgb(255, 255, 255);
-}
-
 /* left side card css */
 
-.card_academics {
+.left1_card {
     /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
     transition: 0.3s;
     /* border-radius: 5px; */
@@ -71,22 +44,22 @@ table[data-target] {
     margin-top: 12px;
 }
 
-.card_academics .btn_grp {
+.left1_card .left1_btn {
     display: flex;
     flex-direction: column;
     /* align-items: center; */
 }
 
-.card_academics .btn_grp .btn {
+.left1_card .left1_btn .btn {
     text-align: left;
     font-weight: 700;
     border: 1px solid #ddd;
 }
-.card_academics .btn_grp .btn:hover{
+.left1_card .left1_btn .btn:hover{
     color: #fff !important;
     background-color: #2e3192 !important;
 }
-.card_academics .btn_grp .btn:focus {
+.left1_card .left1_btn .btn:focus {
         outline: none;
 }
 
@@ -109,12 +82,6 @@ table[data-target] {
     width: 100%;
   }
 
-.thead-sub {
-    color: #2e3192;
-}
-.lunch {
-
-}
 /* left side card css ends */
 
 

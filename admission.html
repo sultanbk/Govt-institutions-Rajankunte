@@ -1,106 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Scholarship Portal</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    header {
-      background-color: #2e3192;
-      color: #ffffff;
-      text-align: center;
-      padding: 10px;
-    }
-
-    main {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: #ffffff;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .scholarship-link {
-      margin-bottom: 20px;
-    }
-
-    .scholarship-link a {
-      display: block;
-      background-color: #2e3192;
-      color: #ffffff;
-      padding: 10px;
-      text-decoration: none;
-      border-radius: 4px;
-      transition: background-color 0.3s ease;
-    }
-
-    .scholarship-link a:hover {
-      background-color: #1d1f6a;
-    }
-
-    .scholarship-description {
-      margin-top: 10px;
-    }
-  </style>
+<head id="headContent">
+    <title>Admission</title>
+    <!-- <link rel="stylesheet" href="css/academics.css"> -->
+    <link rel="stylesheet" href="css/admission.css">
 </head>
 <body>
-
-  <header>
-    <h1>Scholarship Portal</h1>
-  </header>
-
-  <main>
-    <div class="scholarship-link">
-      <a href="https://scholarships.gov.in/" target="_blank">National Scholarship Portal</a>
-      <div class="scholarship-description">
-        <p>Official Government of India portal for various scholarships.</p>
-      </div>
+    <div id="navbar">
+        <!-- navbar is here -->
     </div>
 
-    <div class="scholarship-link">
-      <a href="https://ssp.karnataka.gov.in/" target="_blank">SSP Karnataka - Prematric Portal</a>
-      <div class="scholarship-description">
-        <p>Karnataka State Scholarship Portal for Prematric students.</p>
-      </div>
+<div class="main-container academics-container">
+    <h2 id="page_title">ADMISSION</h2>
+    <div class=" container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card left1_card">
+                    <div class="left1_btn">
+                        <button type="button" class="btn mr-3 mb-3" data-target="OVERVIEW">OVERVIEW</button>
+                        <button type="button" class="btn mr-3 mb-3" data-target="FEES">FEES STRUCTURE</button>
+                        <button type="button" class="btn mr-3 mb-3" data-target="ADMISSION">ADMISSION ENQUIRY</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card right1_card">
+                    <div id="OVERVIEW" class="content">
+                        <h2 class="card-body_title">OVERVIEW</h2>
+                        <p> 
+                                <span class="offset-md-1">The admission process for government schools in Karnataka typically begins with notifications from the State Education Department, outlining eligibility criteria and application procedures. Interested candidates, usually residents of Karnataka or specific localities, submit filled application forms with required documents. The selection process, often involving a lottery system, may prioritize economically weaker sections. Some schools may charge a nominal admission fee, and selected candidates undergo a verification process. Admitted students should be familiar with school timings, curriculum, and any specific rules. It is essential to check with the official education department or specific schools for the latest and detailed information.</span>
+                            </p>
+                    </div>
+                    <div id="FEES" class="content" style="display: none;">
+                        <h1 class="card-body_title mb-4">FEES STRUCTURE</h1>
+                        <div class="tt_options">
+                            <div class="row">
+                                
+                            </div>
+                        </div>
+                        <div>
+                            <h2>Download Fees Structure</h2>
+                            <hr>
+                            <p>
+                                <a href="files\HighschoolTT.pdf" download class="btn btn-primary">
+                                    <i class="fas fa-file-download"></i> School Fees Structure
+                                </a>
+                            </p>
+                            <p>
+                                <a href="files\pucTT.pdf" download class="btn btn-primary">
+                                    <i class="fas fa-file-download"></i> PU College Fees Structure
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div id="ADMISSION" class="content" style="display: none;">
+                        <h2 class="card-body_title">ADMISSION ENQUIRY</h2>
+                        <div class="container">
+                            <div id="alumni-form">
+                              <form id="alumniForm" class="row g-3" onsubmit="submitForm(event, 'alumniForm')">
+                                <input type="hidden" name="formId" value="alumniForm">
+                                <div class="col-md-6">
+                                  <input type="text" id="name" name="name" class="form-control" placeholder="Enter Name *" required>
+                                </div>
+                                <div class="col-md-6">
+                                  <input type="email" id="email" name="email" class="form-control" placeholder="Enter Email *" required>
+                                </div>
+                                <div class="col-md-6">
+                                  <input type="text" id="phone" name="phone" class="form-control" placeholder="Enter Phone Number">
+                                </div>
+                                <div class="col-md-6">
+                                  <input type="text" id="batch-yr" name="batch-yr" class="form-control" placeholder="Batch (Year) *" required>
+                                </div>
+                                <div class="col-md-6">
+                                  <input type="text" id="company" name="company" class="form-control" placeholder="Company *" required>
+                                </div>
+                                <div class="col-md-6">
+                                  <input type="text" id="position" name="position" class="form-control" placeholder="Position *" required>
+                                </div>
+                                <div class="col-12">
+                                  <textarea name="address" id="address" class="form-control" placeholder="Address"></textarea>
+                                </div>
+                                <div class="col-md-6">
+                                  <input type="text" id="state" name="state" class="form-control" placeholder="State *" required>
+                                </div>
+                                <div class="col-md-6">
+                                  <input type="text" id="city" name="city" class="form-control" placeholder="City *" required>
+                                </div>
+                                <div class="col-12">
+                                  <textarea name="alumni-msg" id="alumni-msg" class="form-control" placeholder="Any Message?"></textarea>
+                                </div>
+                                <div class="col-12">
+                                  <input type="submit" class="btn btn-primary" value="Submit">
+                                </div>
+                              </form>
+                              <div id="alumniSubmissionMessage" class="mt-3" style="display: none; color: green;">Alumni Form submitted successfully!</div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
 
-    <div class="scholarship-link">
-      <a href="https://ssp.postmatric.karnataka.gov.in/" target="_blank">SSP Karnataka - Postmatric Portal</a>
-      <div class="scholarship-description">
-        <p>Karnataka State Scholarship Portal for Postmatric students.</p>
-      </div>
-    </div>
+<div id="footer">
+        <!-- footer is here  -->
+</div>
 
-    <div class="scholarship-link">
-      <a href="#" target="_blank">Lions Club Scholarships</a>
-      <div class="scholarship-description">
-        <p>Scholarship opportunities provided by the Lions Club organization.</p>
-      </div>
-    </div>
-
-    <div class="scholarship-link">
-      <a href="#" target="_blank">Panchayat Scholarships</a>
-      <div class="scholarship-description">
-        <p>Scholarship programs offered by local Panchayats.</p>
-      </div>
-    </div>
-
-    <div class="scholarship-link">
-      <a href="#" target="_blank">Educational Materials by MLA Shri S R Vishwanath</a>
-      <div class="scholarship-description">
-        <p>Initiative providing educational materials supported by MLA Shri S R Vishwanath.</p>
-      </div>
-    </div>
-  </main>
-
+    <!-- script libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- <script src="js/academics.js"></script> -->
+    <!-- <script src="js/main.js"></script> -->
+    <!-- common.js  -->
+    <script src="js/common.js"></script>
+    <script src="js/admission.js"></script>
 </body>
 </html>
