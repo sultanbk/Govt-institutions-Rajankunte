@@ -21,3 +21,4 @@ setImageSource('srVishwanath', 'images/collage comitee members/member1.jpg')
 
 // blog images 
 setImageSource('blog1','images/puc_staff.jpg')
+
