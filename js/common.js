@@ -13,7 +13,7 @@ setImageSource('third-slide', 'images/slide show/slide3.jpg')
 setImageSource('fourth-slide', 'images/slide show/slide4.jpg')
 
 // Home Page images
-setImageSource('aboutUsImage', 'images/slide2.jpg');
+
 
 setImageSource('photo-card1','images/IMG-20240125-WA0129.jpg')
 setImageSource('photo-card2','images/IMG-20240125-WA0156.jpg')
@@ -23,6 +23,10 @@ setImageSource('photo-card4','images/IMG-20240125-WA0119.jpg')
 
 // about section image
 setImageSource('srVishwanath', 'images/collage comitee members/member1.jpg')
+setImageSource('Vice-president', 'images/collage comitee members/member2.jpg')
+setImageSource('Treasurer', 'images/collage comitee members/member3.jpg')
+
+
 
 // blog images 
 
