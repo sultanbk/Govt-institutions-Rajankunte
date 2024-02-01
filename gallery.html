@@ -79,7 +79,7 @@
             </figure>
             <figure class="col-xl-5 offset-md-2 col-lg-5 col-md-4 col-sm-6 p-1" style="align-items: center;">
               <a href="/images/gallery/SCL_VID1.mp4" data-fancybox="gallery">
-                <video class="img-fluid" controls>
+                <video class="img-fluid" controls id="vid_1">
                   <source src="/images/gallery/SCL_VID1.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
@@ -87,7 +87,7 @@
             </figure>
             <figure class="col-xl-3 col-lg-5 col-md-4 col-sm-6 p-1" style="align-items: center;">
               <a href="/images/gallery/SCL_VID2.mp4" data-fancybox="gallery">
-                <video class="img-fluid" controls>
+                <video class="img-fluid" controls id="vid_1">
                   <source src="/images/gallery/SCL_VID2.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
@@ -134,7 +134,7 @@
             </figure>
             <figure class="col-xl-5 offset-md-2 col-lg-5 col-md-4 col-sm-6 p-1" style="align-items: center;">
               <a href="/images/gallery/CLG_VID1.mp4" data-fancybox="gallery">
-                <video class="img-fluid" controls>
+                <video class="img-fluid" controls id="vid_2">
                   <source src="/images/gallery/CLG_VID1.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
@@ -142,7 +142,7 @@
             </figure>
             <figure class="col-xl-5 col-lg-5 col-md-4 col-sm-6 p-1" style="align-items: center;">
               <a href="/images/gallery/CLG_VID2.mp4" data-fancybox="gallery">
-                <video class="img-fluid" controls>
+                <video class="img-fluid" controls id="vid_2">
                   <source src="/images/gallery/CLG_VID2.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
@@ -163,10 +163,10 @@
         .then(data => {
           document.getElementById('headContent').innerHTML += data;
         });
+      }
 
-
-        <!-- this is fancybox part, it allows users to see images in a larger size when clicking on them -->
-        <script>
+        // <!-- this is fancybox part, it allows users to see images in a larger size when clicking on them -->
+       
           $(document).ready(function() {
             $("[data-fancybox='gallery']").fancybox({
               buttons : [ 
@@ -175,7 +175,7 @@
               ]
             });
           });
-
+        </script>
           <!-- this script is to change the page when clicking on the buttons -->
           <script>
             document.querySelector('#back-button').addEventListener('click', function(event) {
@@ -202,6 +202,22 @@
                 document.querySelector('#pu-section').style.display = 'none';
               });
             });
+          </script>
+
+          <!-- to stop vedio when go back -->
+          
+            <script>
+              document.addEventListener('DOMContentLoaded', function() {
+                document.querySelectorAll('.fa-arrow-left').forEach(function(element) {
+                  element.addEventListener('click', function() {
+                    var videos = document.querySelectorAll('#vid_1, #vid_2, #vid_puc');
+                    for (var i = 0; i < videos.length; i++) {
+                      videos[i].pause();
+                    }
+                  });
+                });
+              });
+            </script>
           </script>
 
         <!-- Bootstrap JS -->
