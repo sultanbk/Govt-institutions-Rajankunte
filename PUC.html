@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="headContent">
+    <title>PUC</title>
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <link rel="stylesheet" type="text/css" href="css/departments.css">
+</head>
+<body>
+    <div id="navbar">
+        <!-- navbar here -->
+    </div>
+    </header>
+    <section class="container">
+        <div class="card-deck">
+            <div class="card text-center" style="border-radius: 15px;">
+                <div class="img-container">
+                    <img src="/images/departments/arts_sec.jpg" id="artsHead" class="rounded-img" alt="primarySc">
+                </div>
+                <div class="card-body">
+                    <button class="image-link btn btn-warning btn1" onclick="window.location.href='pu_arts.html'" style="padding: 5px 10px; width:200px;">ARTS</button>
+                </div>
+            </div>
+            <div class="card text-center" style="border-radius: 15px;">
+                <div class="img-container">
+                    <img src="/images/departments/commerce_sec.jpg" id="commerceHead" class="rounded-img" alt="highSC">
+                </div>
+                <div class="card-body">
+                    <button class="image-link btn btn-warning btn1" onclick="window.location.href='pu_commerce.html'" style="padding: 5px 10px; width:200px;">COMMERCE</button>
+                </div>
+            </div>
+            <div class="card text-center" style= "border-radius: 15px;">
+                <div class="img-container">
+                    <img src="/images/departments/SCIENCE_sec.jpg" id="scienceHead" class="rounded-img" alt="PUC">
+                </div>
+                <div class="card-body">
+                    <button class="image-link btn btn-warning btn1" onclick="window.location.href='pu_science.html'" style="padding: 5px 10px; width:200px;">SCEIENCE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+      <!-- all the department over  -->
+      <div id="footer">
+          <!-- footer is here  -->
+      </div>
+      
+      <!-- script libriries -->
+      <!-- this script is to load the navbar and header content  -->
+      <script>
+          window.onload = function() {
+            fetch('head.html')
+              .then(response => response.text())
+              .then(data => {
+                document.getElementById('headContent').innerHTML += data;
+              });
+      
+            fetch('navbar.html')
+              .then(response => response.text())
+              .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+              });
+            fetch('footer.html')
+              .then(response => response.text())
+              .then(data => {
+                document.getElementById('footer').innerHTML = data;
+              });
+          };
+      </script>
+  <!-- Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <!-- main.jss -->
+  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+</body>
+</html>
