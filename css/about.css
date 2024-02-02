@@ -105,6 +105,9 @@
     transform: translate(-50%, -50%);
     text-align: center;
 }
+.chairpersonImage {
+    z-index: 10; /* Adjust this value as needed */
+  }
 
 /* Styling for the member info */
 .memberInfo {
