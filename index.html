@@ -19,7 +19,7 @@
           <img class="d-block w-100" id="first-slide" alt="First slide">
         <div class="custom-caption">
           <h1>WELCOME TO <br>
-            GOVT, INSTITUTIONS<br> 
+            GOVT. INSTITUTIONS<br> 
             RAJANKUNTE</h1>
           <p>Educating For Tommorow</p>
           <a href="aboutus.html">   
@@ -63,7 +63,6 @@
       <p><span class="offset-md-3"> Goal is to make learning enjoyable and empowering. With caring teachers and a variety of subjects, we want to help students gain knowledge, skills, and good values. Our school is all about getting ready for a successful future!
 
         At our school, we foster a holistic learning environment, promoting creativity and critical thinking. Extracurricular activities, sports, and community engagement enrich students' experiences, instilling a sense of responsibility and teamwork. Our commitment extends beyond academics to character development, nurturing well-rounded individuals poised for success in a dynamic world. We prioritize creating a supportive community where every student can thrive and develop into confident, compassionate, and capable individuals.</span></p>
-      <a href="aboutus.html" class="btn">Learn More</a>
     </div>
     <div class="col-md-6">
       <!-- Image Collage for larger screens -->
@@ -71,13 +70,13 @@
         <!-- Photos and descriptions for Primary School -->
         <!-- Add your photo URLs and descriptions here -->
         <div class="col-md-6 img-fluid photo-card"  >
-          <a href="images/IMG-20240125-WA0129.jpg" data-fancybox="gallery" >
+          <a href="images/pic3.jpg" data-fancybox="gallery" >
             <img  id="photo-card1" alt="Photo 1">
           </a>
           
         </div>
         <div class="col-md-6 img-fluid photo-card" >
-          <a href="images/IMG-20240125-WA0156.jpg" data-fancybox="gallery" >
+          <a href="images/pic4.jpg" data-fancybox="gallery" >
             <img  id="photo-card2" alt="Photo 2">
           </a>
         
@@ -94,18 +93,16 @@
           </a>
         
         </div>
-        
-          <!-- <div class="photo-description">Description 2</div> -->
         </div>
-        <!-- Add more photo cards as needed -->
       </div>
     </div>
+    <a href="aboutus.html" class="btn button">Learn More</a>
       <!-- End Image Collage -->
     </div>
   </div>
 </section>
 
-
+<hr>
 
 <section>
 
@@ -134,20 +131,20 @@
             </div>
             
             <div class="col-md-6" style="margin-bottom: 50px;">
-              <div id="CLASS" class="content" >
-                      <img src="images/facilities/classroom.jpg"  alt="Overview">  
+              <div id="CLASS" class="home_fac" >
+                      <img src="images/pic2.jpg"  alt="Overview">  
                </div>
 
-                <div id="SWIMMING" class="content" style="display: none;">
+                <div id="SWIMMING" class="home_fac" style="display: none;">
                         <img src="images/facilities/swimmingpool.jpg"  alt="Overview">
                         </div>
-                <div id="FOOD" class="content" style="display: none;">
+                <div id="FOOD" class="home_fac" style="display: none;">
                         <img src="images/facilities/food.jpg"  alt="Overview">
                         </div>
-                <div id="BADMINTON" class="content" style="display: none;">
+                <div id="BADMINTON" class="home_fac" style="display: none;">
                         <img src="images/facilities/badminton_court.jpg"  alt="Overview">
                         </div>
-                <div id="PARK" class="content" style="display: none;">
+                <div id="PARK" class="home_fac" style="display: none;">
                         <img src="images/facilities/park.jpg"  alt="Overview">
                         </div>
                         
@@ -206,8 +203,8 @@
   document.querySelectorAll('.btn_grp .btn').forEach(function(button) {
     button.addEventListener('click', function() {
         // Hide all content divs
-        document.querySelectorAll('.content').forEach(function(content) {
-            content.style.display = 'none';
+        document.querySelectorAll('.home_fac').forEach(function(home_fac) {
+            home_fac.style.display = 'none';
         });
 
         // Show the content div that corresponds to the clicked button

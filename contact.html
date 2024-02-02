@@ -25,7 +25,7 @@
         <input type="submit" value="Submit">
       </form>
       
-      <div id="contactSubmissionMessage" style="display: none; color: green;">Contact Form submitted successfully!</div>
+      <div id="contactSubmissionMessage" style="display: none; margin-top: 4 5px; color: green;"><i>Contact Form submitted successfully!</i></div>
 
     </div>
   </div>
@@ -64,5 +64,30 @@
   <!-- main.jss -->
   <script src="main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+
+  <!-- extra JS  -->
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // prevent the form from submitting normally
+
+    // submit the form using Fetch API
+    fetch(this.action, {
+        method: this.method,
+        body: new FormData(this),
+    })
+    .then(response => response.json()) // parse the JSON response from the server
+    .then(data => {
+        if (data.result === 'success') {
+            // if the server returned a success result, display the custom message
+            document.getElementById('contactSubmissionMessage').style.display = 'block';
+        } else {
+            console.error('Form submission failed:', data);
+        }
+    })
+    .catch(error => {
+        console.error('Form submission failed:', error);
+    });
+});
+</script>
 </body>
 </html>

@@ -15,8 +15,8 @@ setImageSource('fourth-slide', 'images/slide show/slide4.jpg')
 // Home Page images
 
 
-setImageSource('photo-card1','images/IMG-20240125-WA0129.jpg')
-setImageSource('photo-card2','images/IMG-20240125-WA0156.jpg')
+setImageSource('photo-card1','images/pic3.jpg')
+setImageSource('photo-card2','images/pic4.jpg')
 setImageSource('photo-card3','images/IMG-20240125-WA0164.jpg')
 setImageSource('photo-card4','images/IMG-20240125-WA0119.jpg')
 
@@ -56,6 +56,3 @@ setImageSource('badminton_court','images/facilities/badminton_court.jpg')
 setImageSource('food','images/facilities/food.jpg')
 setImageSource('auditorium','images/facilities/auditorium.jpg')
 setImageSource('park','images/facilities/park.jpg')
-
-
-
