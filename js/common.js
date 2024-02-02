@@ -58,4 +58,9 @@ setImageSource('auditorium','images/facilities/auditorium.jpg')
 setImageSource('park','images/facilities/park.jpg')
 
 
+// events images
+
+setImageSource('event1','images/events/independenceday.jpg')
+
+
 
