@@ -206,23 +206,30 @@
   });
 
 
-  document.querySelectorAll('.btn_grp .btn').forEach(function(button) {
-    button.addEventListener('click', function() {
-        // Hide all content divs
-        document.querySelectorAll('.content').forEach(function(content) {
-            content.style.display = 'none';
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get all buttons
+    var buttons = document.querySelectorAll('.btn');
+
+    // Add click event listener to each button
+    buttons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        // Get target id from data-target attribute
+        var targetId = this.getAttribute('data-target');
+
+        // Hide all sections
+        var sections = document.querySelectorAll('.home-fac');
+        sections.forEach(function(section) {
+          section.style.display = 'none';
         });
 
-        // Show the content div that corresponds to the clicked button
-        var sectionId = button.getAttribute('data-target').toUpperCase();
-        var section = document.getElementById(sectionId);
-        if (section) {
-            section.style.display = 'block';
-        } else {
-            console.log('No section found with id:', sectionId);
+        // Show target section
+        var targetSection = document.getElementById(targetId);
+        if (targetSection) {
+          targetSection.style.display = 'block';
         }
+      });
     });
-});
+  });
   </script>
 </body>
 </html>
