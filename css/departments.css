@@ -4,6 +4,14 @@
     margin-top: 30px; /* Adjust as needed to move the image down */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow with darker color */
     border-radius: 15px;
+    
+}
+#img-fluid {
+    padding: 2px;
+    max-width: 80%;
+    max-height: 80%;
+    aspect-ratio: 581/300; 
+    object-fit: cover;
 }
 
 .rounded-img {
@@ -15,4 +23,19 @@
     display: block;
     margin: auto;
     border: 1.5px solid #2e3192; /* This will add a light blue border to the image */
+    aspect-ratio: 581/300; 
+    object-fit: cover;
+}
+.abt-heading2 {
+    color: #2e3192;
+    font-weight: 600;
+    font-size: 26px;
+    margin-bottom: 10px; /* Adjust this value for the desired bottom margin */
+}
+.abt-heading2::after {
+    content: '';
+    display: block;
+    width: 100%; /* Adjust this value as needed */
+    border-bottom: 2px solid #ffc600;
+    margin-top: 5px; /* Adjust this value for the space between text and border */
 }
