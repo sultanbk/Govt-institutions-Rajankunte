@@ -115,7 +115,18 @@ table[data-target] {
 
 /* left side card css ends */
 
-
+.custom-select {
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    color: #495057;
+    transition: all 0.3s ease;
+}
+.custom-select:hover {
+    background-color: #e9ecef;
+}
 
 /* #downloadLink:hover {
     background-color: #000000;

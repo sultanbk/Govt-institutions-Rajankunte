@@ -1,19 +1,26 @@
     /* Gallery heading styles */
-   
+    .abt-heading2 {
+        color: #2e3192;
+        font-weight: 600;
+        font-size: 26px;
+        margin-bottom: 10px; /* Adjust this value for the desired bottom margin */
+    }
+    .abt-heading2::after {
+        content: '';
+        display: block;
+        width: 99%; /* Adjust this value as needed */
+        border-bottom: 2px solid #ffc600;
+        margin-top: 5px; /* Adjust this value for the space between text and border */
+    }
 
     /* Responsive image styles */
     .img-fluid {
         max-width: 80%;
         max-height: 80%;
+        aspect-ratio: 581/300; 
+        object-fit: cover;
     }
-
-    /* Horizontal line styles */
-    .line {
-        border: 0;
-        height: 1px;
-        background: rgb(52, 52, 52);
-    }
-
+    
     /* Figure styles */
     figure {
         max-width: 100%;
@@ -25,8 +32,20 @@
         margin: 1em;
     }
 
+    .imgG-fluid{
+        border-radius: 15px;
+        box-shadow: 25px rgba(0, 0, 0, 0.15);
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+        margin: auto;
+        border: 1.5px solid #2e3192;
+    }
+
     /* Image container styles */
     .image-container {
+        border-radius: 15px;
         position: relative;
         overflow: hidden;
         margin-bottom: 30px;
@@ -78,4 +97,9 @@
     /* Hover effect for image links */
     .image-container:hover .image-link {
         opacity: 1;
+    }
+    #vid_2 {
+        width: 100%; /* This will make the video take up the full width of its container */
+        height: auto; /* This will maintain the aspect ratio of the video */
+        max-height: 500px; /* This will limit the height of the video */
     }
