@@ -55,13 +55,14 @@
   
 <!-- About Section -->
 
-<section class="container about-us mt-5">
+<section class="container about-us mt-4 " >
+  <h1 class="text-center mb-3">About Us</h1>
   <div class="row">
     <div class="col-md-6">
       <h2 class="mb-4">Welcome to Government Kannada and English Medium School and Pre University College Rajankunte, Bengaluru</h2>
-      <p>Our goal is to make learning enjoyable and empowering. With caring teachers and a variety of subjects, we want to help students gain knowledge, skills, and good values. Our school is all about getting ready for a successful future!
+      <p><span class="offset-md-3"> Goal is to make learning enjoyable and empowering. With caring teachers and a variety of subjects, we want to help students gain knowledge, skills, and good values. Our school is all about getting ready for a successful future!
 
-        At our school, we foster a holistic learning environment, promoting creativity and critical thinking. Extracurricular activities, sports, and community engagement enrich students' experiences, instilling a sense of responsibility and teamwork. Our commitment extends beyond academics to character development, nurturing well-rounded individuals poised for success in a dynamic world. We prioritize creating a supportive community where every student can thrive and develop into confident, compassionate, and capable individuals.</p>
+        At our school, we foster a holistic learning environment, promoting creativity and critical thinking. Extracurricular activities, sports, and community engagement enrich students' experiences, instilling a sense of responsibility and teamwork. Our commitment extends beyond academics to character development, nurturing well-rounded individuals poised for success in a dynamic world. We prioritize creating a supportive community where every student can thrive and develop into confident, compassionate, and capable individuals.</span></p>
       <a href="aboutus.html" class="btn">Learn More</a>
     </div>
     <div class="col-md-6">
@@ -69,27 +70,27 @@
       <div class="row">
         <!-- Photos and descriptions for Primary School -->
         <!-- Add your photo URLs and descriptions here -->
-        <div class="col-md-6 img-fluid photo-card"  id="photo-card1">
+        <div class="col-md-6 img-fluid photo-card"  >
           <a href="images/IMG-20240125-WA0129.jpg" data-fancybox="gallery" >
-            <img src="images/IMG-20240125-WA0129.jpg" alt="Photo 1">
+            <img  id="photo-card1" alt="Photo 1">
           </a>
           
         </div>
-        <div class="col-md-6 img-fluid photo-card" id="photo-card2">
+        <div class="col-md-6 img-fluid photo-card" >
           <a href="images/IMG-20240125-WA0156.jpg" data-fancybox="gallery" >
-            <img src="images/IMG-20240125-WA0156.jpg" alt="Photo 2">
+            <img  id="photo-card2" alt="Photo 2">
           </a>
         
         </div>
-        <div class="col-md-6 img-fluid photo-card" id="photo-card3">
+        <div class="col-md-6 img-fluid photo-card" >
           <a href="images/IMG-20240125-WA0164.jpg" data-fancybox="gallery" >
-            <img src="images/IMG-20240125-WA0164.jpg" alt="Photo 3">
+            <img  id="photo-card3" alt="Photo 3">
           </a>
         
         </div>
-        <div class="col-md-6 img-fluid photo-card" id="photo-card4">
+        <div class="col-md-6 img-fluid photo-card" >
           <a href="images/IMG-20240125-WA0119.jpg" data-fancybox="gallery" >
-            <img src="images/IMG-20240125-WA0119.jpg" alt="Photo 4">
+            <img  id="photo-card4" alt="Photo 4">
           </a>
         
         </div>
@@ -103,6 +104,68 @@
     </div>
   </div>
 </section>
+
+
+
+<section>
+
+  <div class="academics-container">
+    
+    
+    <div class=" container aboutUsContainer">
+
+      <h1 class="text-center">Facilities</h1>
+      <p><span class=""> Recognizing the individuality of each child, the Government Institution of Rajankunte is dedicated to crafting a tailored learning environment that nurtures holistic development for our young scholars.</span></p>
+      
+        <div class="row">
+            <div class="col-md-6" style="margin-bottom: 50px;">
+                <div class="card card_academics">
+                    <div class="btn_grp">
+                        <button type="button" class="btn mr-3 mb-3" data-target="CLASS">Class Room</button>
+                        <button type="button" class="btn mr-3 mb-3" data-target="SWIMMING">Swimming Pool</button>
+                        <button type="button" class="btn mr-3 mb-3" data-target="FOOD">Food</button>
+                        <button type="button" class="btn mr-3 mb-3" data-target="BADMINTON">Badminton Court</button>
+                        <button type="button" class="btn mr-3 mb-3" data-target="PARK">Park</button>
+                        
+                        
+                     
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6" style="margin-bottom: 50px;">
+              <div id="CLASS" class="content" >
+                      <img src="images/facilities/classroom.jpg"  alt="Overview">  
+               </div>
+
+                <div id="SWIMMING" class="content" style="display: none;">
+                        <img src="images/facilities/swimmingpool.jpg"  alt="Overview">
+                        </div>
+                <div id="FOOD" class="content" style="display: none;">
+                        <img src="images/facilities/food.jpg"  alt="Overview">
+                        </div>
+                <div id="BADMINTON" class="content" style="display: none;">
+                        <img src="images/facilities/badminton_court.jpg"  alt="Overview">
+                        </div>
+                <div id="PARK" class="content" style="display: none;">
+                        <img src="images/facilities/park.jpg"  alt="Overview">
+                        </div>
+                        
+                      </div>
+        </div>
+            <div class="d-flex justify-content-center">
+              <a href="facilities.html" class="abt-viewMore">
+                  <button type="button" class="btn viewMore_btn btn-outline-warning" style="padding: 5px 10px; font-size: 15px;">Know More</button>
+              </a>
+          </div>
+       
+
+
+</section>
+
+
+
+
 
 <div id="footer">
 
@@ -138,6 +201,25 @@
           momentum: false   // Continue movement after releasing mouse/touch when panning
       }
   });
+
+
+  document.querySelectorAll('.btn_grp .btn').forEach(function(button) {
+    button.addEventListener('click', function() {
+        // Hide all content divs
+        document.querySelectorAll('.content').forEach(function(content) {
+            content.style.display = 'none';
+        });
+
+        // Show the content div that corresponds to the clicked button
+        var sectionId = button.getAttribute('data-target').toUpperCase();
+        var section = document.getElementById(sectionId);
+        if (section) {
+            section.style.display = 'block';
+        } else {
+            console.log('No section found with id:', sectionId);
+        }
+    });
+});
   </script>
 </body>
 </html>

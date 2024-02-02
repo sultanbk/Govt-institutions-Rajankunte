@@ -21,6 +21,9 @@ setImageSource('photo-card3','images/IMG-20240125-WA0164.jpg')
 setImageSource('photo-card4','images/IMG-20240125-WA0119.jpg')
 
 
+setImageSource('facilities1','images/facilities/ground.jpg')
+setImageSource('park','images/facilities/park.jpg')
+
 // about section image
 setImageSource('srVishwanath', 'images/collage comitee members/member1.jpg')
 setImageSource('Vice-president', 'images/collage comitee members/member2.jpg')
@@ -40,14 +43,13 @@ setImageSource('blog1','images/puc_staff.jpg')
 
 // facilities images
 
-setImageSource('classroom','images/facilities/classroom.jpg')
-setImageSource('library','images/facilities/library.jpg') 
+setImageSource('classroom1','images/facilities/classroom.jpg')
 setImageSource('smartroom','images/facilities/samrtclass.jpg')
+setImageSource('library','images/facilities/library.jpg') 
 setImageSource('computer_lab','images/facilities/computer_lab.jpg')
 setImageSource('physicslab','images/facilities/physicslab.jpg')
 setImageSource('chemistrylab','images/facilities/chemistrylab.jpg')
 setImageSource('biologylab','images/facilities/biologylab.jpg')
-
 setImageSource('swimmingPool','images/facilities/swimmingpool.jpg')
 setImageSource('ground','images/facilities/ground.jpg')
 setImageSource('badminton_court','images/facilities/badminton_court.jpg')
