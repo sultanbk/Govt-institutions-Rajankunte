@@ -836,7 +836,7 @@ footer li {
 }
 
 
-.content img {
+.home-fac img {
   width: 100%; /* This will make the image take the full width of its parent element */
   height: 314px; /* Adjust this value to suit your needs */
   object-fit: cover;
