@@ -77,13 +77,6 @@ setImageSource('park','images/facilities/park.jpg')
 
 setImageSource('event1','images/events/independenceday.jpg')
 
-
-
-//departments image
-setImageSource('primaryHead','images/gallery/school_1.jpg')
-setImageSource('highschoolHead','images/gallery/SCL_IMG2.jpg')
-setImageSource('pucHead','images/gallery/PUC_1.jpg')
-
 //primarySchool department info section
 setImageSource('img-fluid','images/gallery/SCL_IMG10.jpg')
 setImageSource('img-fluid','images/gallery/SCL_IMG2.jpg')
