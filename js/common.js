@@ -85,7 +85,7 @@ setImageSource('highschoolHead','images/gallery/SCL_IMG2.jpg')
 setImageSource('pucHead','images/gallery/PUC_1.jpg')
 
 //primarySchool department info section
-setImageSource('img-fluid','images/gallery/SCL_IMG1.jpg')
+setImageSource('img-fluid','images/gallery/SCL_IMG10.jpg')
 setImageSource('img-fluid','images/gallery/SCL_IMG2.jpg')
 
 //primarySchool department faculty section
@@ -119,7 +119,7 @@ setImageSource('sciencesHead','images/departments/SCIENCE_sec.jpg')
 
 //pu arts department info section
 setImageSource('img-fluid','images/gallery/CLG_IMG3.jpg')
-setImageSource('img-fluid','images/gallery/CLG_IMG4.jpg')
+setImageSource('img-fluid','images/gallery/CLG_IMG6.jpg')
 
 //pu arts department faculty section
 setImageSource('lecturer1','images/departments/ARTS_1.jpg')
@@ -128,8 +128,8 @@ setImageSource('lecturer3','images/departments/ARTS_3.jpg')
 setImageSource('lecturer4','/images/departments/Blank_img.jpg')
 
 //pu commerce department info section
-setImageSource('img-fluid','images/gallery/CLG_IMG5.jpg')
-setImageSource('img-fluid','images/gallery/CLG_IMG4.jpg')
+setImageSource('img-fluid','images/gallery/CLG_IMG7.jpg.jpg')
+setImageSource('img-fluid','/images/gallery/CLG_IMG6.jpg')
 
 //pu commerce department faculty section
 setImageSource('lecturer1','images/departments/COMMERCE_1.jpg')
@@ -139,8 +139,8 @@ setImageSource('lecturer4','/images/departments/Blank_img.jpg')
 setImageSource('lecturer5','/images/departments/Blank_img.jpg')
 
 //pu science department info section
-setImageSource('img-fluid','images/gallery/CLG_IMG2.jpg')
-setImageSource('img-fluid','images/gallery/CLG_IMG4.jpg')
+setImageSource('img-fluid','images/gallery/CLG_IMG8.jpg')
+setImageSource('img-fluid','images/gallery/CLG_IMG9.jpg')
 
 //pu science department faculty section
 setImageSource('lecturer1','images/departments/SCIENCE_1.jpg')

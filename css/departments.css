@@ -12,6 +12,8 @@
     max-height: 80%;
     aspect-ratio: 581/300; 
     object-fit: cover;
+    width: 100%;
+    height: auto;
 }
 
 .rounded-img {
