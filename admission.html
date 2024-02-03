@@ -68,15 +68,6 @@
                                 <div class="col-md-6">
                                   <input type="text" id="phone" name="phone" class="form-control" placeholder="Enter Phone Number">
                                 </div>
-                                <!-- <div class="col-md-6">
-                                  <input type="text" id="batch-yr" name="batch-yr" class="form-control" placeholder="Batch (Year) *" required>
-                                </div> -->
-                                <!-- <div class="col-md-6">
-                                  <input type="text" id="company" name="company" class="form-control" placeholder="Company *" required>
-                                </div>
-                                <div class="col-md-6">
-                                  <input type="text" id="position" name="position" class="form-control" placeholder="Position *" required>
-                                </div> -->
                                 <div class="col-12">
                                   <textarea name="address" id="address" class="form-control" placeholder="Address"></textarea>
                                 </div>
@@ -93,8 +84,8 @@
                                   <input type="submit" class="btn btn-primary" value="Submit">
                                 </div>
                               </form>
-                              <div id="alumniSubmissionMessage" class="mt-3" style="display: none; color: green;">Alumni Form submitted successfully!</div>
                             </div>
+                            <div id="alumniSubmissionMessage" class="mt-3" style="display: none; color: green;">Admission Form submitted successfully!</div>
                           </div>
                     </div>
                 </div>
@@ -116,5 +107,33 @@
     <!-- common.js  -->
     <script src="js/common.js"></script>
     <script src="js/admission.js"></script>
+
+    <!-- extra Js  -->
+    <script>
+      document.getElementById('admissionForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        var formData = new FormData(this);
+
+        fetch(this.action, {
+          method: 'POST',
+          body: formData
+        })
+        .then(function(response) {
+          return response.json();
+        })
+        .then(function(data) {
+          if (data.result === 'success') {
+            document.getElementById('alumniSubmissionMessage').style.display = 'block';
+          } else {
+            // Handle error
+            console.error('Error:', data);
+          }
+        })
+        .catch(function(error) {
+          console.error('Error:', error);
+        });
+      });
+    </script>
 </body>
 </html>

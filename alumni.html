@@ -46,8 +46,8 @@
           <input type="submit" class="btn btn-primary" value="Submit">
         </div>
       </form>
-      <div id="alumniSubmissionMessage" class="mt-3" style="display: none; color: green;">Alumni Form submitted successfully!</div>
     </div>
+    <div id="alumniSubmissionMessage" class="mt-3" style="display: none; color: green;">Alumni Form submitted successfully!</div>
   </div>
 
   <div id="footer">
@@ -56,10 +56,6 @@
 
 
   <!-- script libraries  -->
-
-  <!-- this is to connect google apps script  -->
-  
-  <!-- this script is to load the navbar and header content  -->
   <script>
     window.onload = function() {
       fetch('head.html')
@@ -86,5 +82,32 @@
   <!-- main.jss -->
   <script src="main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+
+  <script>
+    document.getElementById('alumniForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      var formData = new FormData(this);
+
+      fetch(this.action, {
+        method: 'POST',
+        body: formData
+      })
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(data) {
+        if (data.result === 'success') {
+          document.getElementById('alumniSubmissionMessage').style.display = 'block';
+        } else {
+          // Handle error
+          console.error('Error:', data);
+        }
+      })
+      .catch(function(error) {
+        console.error('Error:', error);
+      });
+    });
+  </script>
 </body>
 </html>
