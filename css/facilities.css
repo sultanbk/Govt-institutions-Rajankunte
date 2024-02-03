@@ -81,15 +81,14 @@
 .facility-image {
     width: 581px;
     height: 236px;
-    object-fit: cover; /* This will ensure that the image covers the entire space without distorting the aspect ratio */
+    object-fit: cover; 
 }
 
 .facility-image {
     width: 100%;
- /* This is equivalent to a height of 236px when the width is 581px */
     object-fit: cover;
     background-position: center;
-    aspect-ratio: 581/300; /* This will ensure that the image maintains the aspect ratio */
+    aspect-ratio: 581/300;
 }
 
 
