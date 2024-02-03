@@ -948,3 +948,33 @@ footer li {
 body {
   overflow-x: hidden;
 }
+
+@media (max-width: 767px) {
+  #photo-card1{
+    display: none;
+  }
+}
+
+
+.photo-card img{
+  
+    width: 80%;
+    height: 300px;
+    object-fit: cover;
+    margin-left: 10px;
+
+}
+
+.photo-card1 img{
+  
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 10px;
+
+}
+
+
+.home-gal{
+  display: none;
+}
