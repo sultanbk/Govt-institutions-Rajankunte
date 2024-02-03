@@ -267,19 +267,22 @@
 
   document.querySelectorAll('.btn_grp .btn').forEach(function(button) {
     button.addEventListener('click', function() {
-        // Hide all content divs
-        document.querySelectorAll('.home_fac').forEach(function(home_fac) {
-            home_fac.style.display = 'none';
-        });
-
-        // Show target section
-        var targetSection = document.getElementById(targetId);
-        if (targetSection) {
-          targetSection.style.display = 'block';
-        }
+      // Hide all content divs
+      document.querySelectorAll('.home_fac').forEach(function(home_fac) {
+        home_fac.style.display = 'none';
       });
+
+      // Get the id of the target section from the data-target attribute of the button
+      var targetId = button.getAttribute('data-target');
+
+      // Show target section
+      var targetSection = document.getElementById(targetId);
+      if (targetSection) {
+        targetSection.style.display = 'block';
+      }
     });
   });
+  
   </script>
 </body>
 </html>
