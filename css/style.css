@@ -877,3 +877,64 @@ footer li {
   /* .about-us{
     background-color:#ffc600;
   } */
+
+  .home-event-images img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .home-event-section{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 50px 0 rgba(9, 6, 230, 0.1);
+
+   
+    
+    
+   
+}
+
+.event-text{
+  text-align: center;
+  font-size: 17px;
+  font-weight: 600;
+  color: #2e3192;
+  margin-top: 10px;
+}
+
+.home-contact {
+  margin-left: 20px;
+}
+
+@media (max-width: 767px) {
+  .home-contact {
+    margin-left: 0;
+  }
+  
+}
+
+
+.about-us{
+  box-shadow: 0 0 50px 0 rgba(9, 6, 230, 0.1);
+  position: relative;
+  margin-bottom: 25px;
+  padding-bottom: 50px;
+}
+
+.home-contact-p {
+  font-size: 26px;
+  color: #2e3192;
+}
+
+@media (max-width: 767px) {
+  .home-contact-p {
+    font-size: 19px; /* Adjust this value to your desired font size for mobile view */
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
