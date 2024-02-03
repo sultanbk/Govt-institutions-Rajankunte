@@ -36,7 +36,7 @@ setImageSource('boardMember3','images/Board of members/member3.jpg')
 setImageSource('boardMember4','images/Board of members/member4.jpg') 
 
 // about section chairperson
-setImageSource('Vice-president', 'images/collage comitee members/member1.jpg')
+setImageSource('srVishwanath', 'images/collage comitee members/member1.jpg')
 
 // about section principal
 setImageSource('principle1', 'images/principles/PUC.jpg')
