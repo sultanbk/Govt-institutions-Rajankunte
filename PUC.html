@@ -4,13 +4,29 @@
     <title>PUC</title>
     <link rel="stylesheet" type="text/css" href="css/about.css">
     <link rel="stylesheet" type="text/css" href="css/departments.css">
+    <style>
+        @keyframes slideInFromLeft {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .animate {
+            animation: slideInFromLeft 1s ease-out;
+        }
+    </style>
 </head>
 <body>
     <div id="navbar">
         <!-- navbar here -->
     </div>
     </header>
-    <section class="container" id="puSection">
+    <section class="container" id="puSection" class="content animate">
         <div class="card-deck">
             <div class="card text-center" style="border-radius: 15px;">
                 <div class="img-container">
