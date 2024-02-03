@@ -15,10 +15,10 @@ setImageSource('fourth-slide', 'images/slide show/slide4.jpg')
 // Home Page images
 
 
-setImageSource('photo-card1','images/pic3.jpg')
-setImageSource('photo-card2','images/pic4.jpg')
-setImageSource('photo-card3','images/IMG-20240125-WA0164.jpg')
-setImageSource('photo-card4','images/IMG-20240125-WA0119.jpg')
+setImageSource('photo-card1','images/home-gal1.jpg')
+setImageSource('photo-card2','images/home-gal2.jpg')
+setImageSource('photo-card3','images/homegal-3.jpg')
+setImageSource('photo-card4','images/home-gal4,jpg')
 
 
 setImageSource('facilities1','images/facilities/ground.jpg')
