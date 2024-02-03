@@ -950,7 +950,7 @@ body {
 }
 
 @media (max-width: 767px) {
-  #photo-card1{
+  .photo-card-large img{
     display: none;
   }
 }
