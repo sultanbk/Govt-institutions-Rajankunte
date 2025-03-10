@@ -20,7 +20,7 @@ The DevCaft School Website project is aimed at creating an informative and user-
 
 ## Live Website
 
-You can access the live version of the website **[here]**(<https://elaborate-lebkuchen-932a68.netlify.app/>).
+You can access the live version of the website **[here]**(<[https://elaborate-lebkuchen-932a68.netlify.app/](https://rajankunteschool.netlify.app/)>).
 
 ## Contributors
 
